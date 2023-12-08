@@ -4,28 +4,28 @@
     font-family: 'Pretendard';
     font-weight: 700;
     font-display: swap;
-    src: local('Pretendard Bold'), url('.../font/Pretendard-Bold.subset.woff2') format('woff2'), url('../font/Pretendard-Bold.subset.woff') format('woff');
+    src: local('Pretendard Bold'), url('../font/Pretendard-Bold.woff2') format('woff2'), url('../font/Pretendard-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 600;
     font-display: swap;
-    src: local('Pretendard SemiBold'), url('.../font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('../font/Pretendard-SemiBold.subset.woff') format('woff');
+    src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.woff2') format('woff2'), url('../font/Pretendard-SemiBold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 500;
     font-display: swap;
-    src: local('Pretendard Medium'), url('.../font/Pretendard-Medium.subset.woff2') format('woff2'), url('../font/Pretendard-Medium.subset.woff') format('woff');
+    src: local('Pretendard Medium'), url('../font/Pretendard-Medium.woff2') format('woff2'), url('../font/Pretendard-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 400;
     font-display: swap;
-    src: local('Pretendard Regular'), url('.../font/Pretendard-Regular.subset.woff2') format('woff2'), url('../font/Pretendard-Regular.subset.woff') format('woff');
+    src: local('Pretendard Regular'), url('../font/Pretendard-Regular.woff2') format('woff2'), url('../font/Pretendard-Regular.woff') format('woff');
 }
 
 :root {
@@ -548,7 +548,7 @@ button:focus {
         justify-content: space-between;
     }
 
-    
+
     .full-screen-modal .ss-modal-body {}
 
     .full-screen-modal .mo {
@@ -745,12 +745,31 @@ h3.title {
     flex-direction: column;
 }
 
+.ss-input-area {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.ss-input-area span {
+    color: #5C5D62;
+}
+
+.ss-input-area button {
+    flex: 0 0 auto;
+}
+
 .ss-input-group label {
     color: #5C5D62;
     font-size: 14px;
     font-weight: 500;
     margin: 0 0 12px 0;
     text-align: left;
+}
+
+.ss-input-group label span {
+    color: #FF6421;
+    margin: 0 0 0 4px;
 }
 
 .ss-input-group input[type=text],
@@ -764,6 +783,7 @@ h3.title {
     height: 32px;
     padding: 0 16px;
     transition: all .5s;
+    width: 100%;
 }
 
 .ss-input-group input[type=text]::placeholder,
@@ -905,6 +925,22 @@ h3.title {
     gap: 8px;
 }
 
+.check-group label .essential {
+    color: #D7463E;
+}
+
+.check-group label .select {
+    color: #828286;
+}
+
+.check-group label b {
+    font-weight: 500;
+}
+
+.check-group label .underline {
+    text-decoration: underline;
+}
+
 .check-group label::before {
     background: url(../img/ico/i-checkbox.png);
     background-size: cover;
@@ -950,6 +986,15 @@ h3.title {
 .check-group input.intermediate:checked:disabled+label::before {
     background: url(../img/ico/i-checkbox-checked-intermediate-disabled.png);
     background-size: cover;
+}
+
+.check-group.type2 label {
+    align-items: flex-start;
+    gap: 0;
+}
+
+.check-group.type2 label::before {
+    margin: 0 8px 0 0;
 }
 
 

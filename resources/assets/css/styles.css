@@ -25,6 +25,7 @@
  * 06) 메인_GNB_001
  * 07) 카테고리_001
  * 08) 상세페이지_001
+ * 09) 판매자_회원가입
  */
 
 /* **************************************** *
@@ -3055,4 +3056,123 @@ main {
     .review-modal .ss-btn-group.mo {
         display: none;
     }
+}
+
+/* **************************************** *
+ * 판매자_회원가입
+ * **************************************** */
+.ss-header-logo {
+    align-items: center;
+    display: flex;
+}
+
+.ss-header-logo span {
+    align-items: center;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    height: 22px;
+    margin: 0 0 0 12px;
+    padding: 0 4px;
+}
+
+.ss-header-logo span.seller {
+    background: #E5ECF6;
+    color: #3B5AAB;
+}
+
+.seller-sign-wrap .cont-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 24px 16px;
+}
+
+.seller-sign-wrap h1 {
+    color: #191A1C;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.seller-sign-wrap p {
+    color: #2C478E;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seller-sign-wrap .cont-body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+.seller-sign-wrap .sign-area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.seller-sign-wrap .sign-area h2 {
+    color: #191A1C;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seller-sign-wrap .sign-area h2 span {
+    color: #D7463E;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.seller-sign-wrap .ss-input-wrap {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.seller-sign-wrap .ss-input-group {
+    gap: 8px;
+}
+
+.seller-sign-wrap .ss-input-area button {
+    width: 80px;
+}
+
+.seller-sign-wrap .ss-input-group label {
+    margin: 0;
+}
+
+.bb-1 {
+    border-bottom: 1px solid #EBEBF1;
+    padding: 0 0 16px 0;
+}
+
+.terms-area {
+    background: #F2F6FB;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+.seller-sign-wrap .ss-btn-group button {
+    width: 100%;
+}
+
+.seller-sign-wrap .check-group label {
+    font-size: 14px;
+}
+
+@media (min-width: 520px) {
+}
+
+@media (min-width: 768px) {
 }
