@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- S:wrap -->
+    <div id="wrap">
+        <header class="ss-header" id="ss-header"></header>
+
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="payment-wrap">
+                <div class="container">
+                    <h4>장바구니</h4>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="ss-card-wrap">
+                                <div class="ss-card">
+                                    <div class="ss-card-header">
+                                        <h3>유의사항</h3>
+                                    </div>
+                                    <div class="ss-card-body">
+                                        <p>구매하신 상품은 결제 완료 후 링크 정보가 발급됩니다.<br>해당 영역에서는 사용안내 정보를 표시합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="ss-card">
+                                    <div class="ss-card-header">
+                                        <h3>주문자 정보</h3>
+                                    </div>
+                                    <div class="ss-card-body">
+                                        <div class="ss-input-wrap">
+                                            <div class="ss-input-group">
+                                                <label for="">이름<span>*</span></label>
+                                                <input type="text" placeholder="김공부">
+                                            </div>
+                                            <div class="ss-input-group">
+                                                <label for="">휴대폰 번호<span>*</span></label>
+                                                <input type="text" placeholder="010-1232-4444">
+                                            </div>
+                                            <div class="ss-input-group">
+                                                <label for="">상품 링크 받을 이메일 주소<span>*</span></label>
+                                                <input type="text" placeholder="study@naver.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ss-card">
+                                    <div class="ss-card-header">
+                                        <h3>주문 상품 (2)</h3>
+                                    </div>
+                                    <div class="ss-card-body">
+                                        <div class="payment-product-list">
+                                            <div class="payment-product-item">
+                                                <div class="payment-product-img"
+                                                    style="background: url(img/sample/sample01.png) center center; background-size: cover;">
+                                                </div>
+                                                <div class="payment-product-info">
+                                                    <ul class="payment-product-tag">
+                                                        <li class="gray">프로그램</li>
+                                                        <li class="mint">ONLY 공선</li>
+                                                    </ul>
+                                                    <h1 class="payment-product-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h1>
+                                                </div>
+                                                <h4 class="payment-product-price">150,000원</h4>
+                                            </div>
+                                            <div class="payment-product-item">
+                                                <div class="payment-product-img"
+                                                    style="background: url(img/sample/sample01.png) center center; background-size: cover;">
+                                                </div>
+                                                <div class="payment-product-info">
+                                                    <ul class="payment-product-tag">
+                                                        <li class="gray">프로그램</li>
+                                                        <li class="mint">ONLY 공선</li>
+                                                    </ul>
+                                                    <h1 class="payment-product-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h1>
+                                                </div>
+                                                <h4 class="payment-product-price">150,000원</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="payment-right">
+                                <div class="payment-info">
+                                    <h2>결제정보</h2>
+                                    <dl class="payment-product-all">
+                                        <dt>전체 상품</dt>
+                                        <dd>2개</dd>
+                                    </dl>
+                                    <dl class="payment-price-all">
+                                        <dt>총 결제금액</dt>
+                                        <dd>30,000<span>원</span></dd>
+                                    </dl>
+                                    <button type="button" class="btn btn-primary">결제하기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E:PC -->
+
+        <!-- S:MO -->
+        <button type="button" class="btn btn-sm btn-primary open-modal"
+        data-modal-id="orderPaymentModal">fullScreenModal</button>
+        <!-- E:MO -->
+
+        <footer class="ss-footer" id="ss-footer"></footer>
+    </div>
+    <!-- E:wrap -->
+
+    <!-- S:orderPaymentModal -->
+    <div id="orderPaymentModal" class="ss-modal-wrap full-screen-modal">
+        <div class="ss-modal-inner">
+            <div class="ss-modal-content">
+                <div class="ss-modal-header">
+                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="ss-modal-body">
+                    <div class="ss-card-wrap">
+                        <div class="ss-card">
+                            <div class="ss-card-header">
+                                <h3>유의사항</h3>
+                            </div>
+                            <div class="ss-card-body">
+                                <p>구매하신 상품은 결제 완료 후 링크 정보가 발급됩니다.<br>해당 영역에서는 사용안내 정보를 표시합니다.</p>
+                            </div>
+                        </div>
+                        <div class="ss-card">
+                            <div class="ss-card-header">
+                                <h3>주문자 정보</h3>
+                            </div>
+                            <div class="ss-card-body">
+                                <div class="ss-input-wrap">
+                                    <div class="ss-input-group">
+                                        <label for="">이름<span>*</span></label>
+                                        <input type="text" placeholder="김공부">
+                                    </div>
+                                    <div class="ss-input-group">
+                                        <label for="">휴대폰 번호<span>*</span></label>
+                                        <input type="text" placeholder="010-1232-4444">
+                                    </div>
+                                    <div class="ss-input-group">
+                                        <label for="">상품 링크 받을 이메일 주소<span>*</span></label>
+                                        <input type="text" placeholder="study@naver.com">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ss-card">
+                            <div class="ss-card-header">
+                                <h3>주문 상품 (2)</h3>
+                            </div>
+                            <div class="ss-card-body">
+                                <div class="payment-product-list">
+                                    <div class="payment-product-item">
+                                        <div class="payment-product-img"
+                                            style="background: url(img/sample/sample01.png) center center; background-size: cover;">
+                                        </div>
+                                        <div class="payment-product-info">
+                                            <ul class="payment-product-tag">
+                                                <li class="gray">프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h1 class="payment-product-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h1>
+                                        </div>
+                                        <h4 class="payment-product-price">150,000원</h4>
+                                    </div>
+                                    <div class="payment-product-item">
+                                        <div class="payment-product-img"
+                                            style="background: url(img/sample/sample01.png) center center; background-size: cover;">
+                                        </div>
+                                        <div class="payment-product-info">
+                                            <ul class="payment-product-tag">
+                                                <li class="gray">프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h1 class="payment-product-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h1>
+                                        </div>
+                                        <h4 class="payment-product-price">150,000원</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ss-modal-footer">
+                    <button type="button" class="btn btn-primary">결제하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:orderPaymentModal -->
+
+
+
+    <!-- S:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E:script -->
+</body>
+
+</html>

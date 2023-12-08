@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap">
+        <header class="ss-header" id="ss-header"></header>
+
+        <!-- S:PC -->
+        <div class="content">
+            <div class="payment-wrap complete">
+                <div class="container">
+                    <div class="complete-area">
+                        <i class="ico i-bag"></i>
+                        <h2>주문이 정상적으로 완료되었습니다.</h2>
+                        <p>주문하신 상품은 구매내역에서 사용가능하십니다.</p>
+                        <button type="button" class="btn btn-md btn-outline-primary">구매내역으로 이동</button>
+                        <div class="complete-box">
+                            <dl>
+                                <dt>주문번호</dt>
+                                <dd>20101010101010101</dd>
+                            </dl>
+                            <dl>
+                                <dt>주문일자</dt>
+                                <dd>2023.12.12 15:20</dd>
+                            </dl>
+                            <dl>
+                                <dt>결제 정보</dt>
+                                <dd>신용카드 / 일시불 <span>(승인일시 : 2023.12.12 15:20)</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E:PC -->
+
+        <!-- S:MO -->
+        <!-- <button type="button" class="btn btn-sm btn-primary open-modal"
+            data-modal-id="compeletePaymentModal">결제완료팝업</button> -->
+        <!-- E:MO -->
+
+        <footer class="ss-footer" id="ss-footer"></footer>
+
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:compeletePaymentModal -->
+    <div id="compeletePaymentModal" class="ss-modal-wrap full-screen-modal">
+        <div class="ss-modal-inner">
+            <div class="ss-modal-content">
+                <div class="ss-modal-header">
+                    <h3 class="ss-modal-title">장바구니</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="ss-modal-body">
+                    <div class="payment-wrap complete">
+                        <div class="complete-area">
+                            <i class="ico i-bag"></i>
+                            <h2>주문이 정상적으로 완료되었습니다.</h2>
+                            <p>주문하신 상품은 구매내역에서 사용가능하십니다.</p>
+                            <button type="button" class="btn btn-md btn-outline-primary">구매내역으로 이동</button>
+                            <div class="complete-box">
+                                <dl>
+                                    <dt>주문번호</dt>
+                                    <dd>20101010101010101</dd>
+                                </dl>
+                                <dl>
+                                    <dt>주문일자</dt>
+                                    <dd>2023.12.12 15:20</dd>
+                                </dl>
+                                <dl>
+                                    <dt>결제 정보</dt>
+                                    <dd>신용카드 / 일시불 <span>(승인일시 : 2023.12.12 15:20)</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:orderPaymentModal -->
+
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

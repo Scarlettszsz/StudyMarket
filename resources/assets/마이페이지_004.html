@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap" class="mypage">
+        <header class="ss-header" id="ss-header"></header>
+
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="mypage-wrap">
+                <div class="sidenav">
+                    <div class="side-top">
+                        <h2>마이페이지</h2>
+                    </div>
+                    <div class="side-bot">
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#"><i class="ico i-my-g"></i>내 정보</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-list-g"></i>구매 내역</a>
+                            </li>
+                            <li class="active">
+                                <a href="#"><i class="ico i-msg-g"></i>상품 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-help-g"></i>문의 내역</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="sub-cont my-list">
+                    <div class="depth-group">
+                        <ul>
+                            <li><a href="#"><i class="ico i-home"></i></a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">문의 내역</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-cont-top">
+                        <h1>문의 내역</h1>
+                    </div>
+                    <div class="sub-cont-body">
+                        <div class="inquire-wrap">
+                            <div class="inquire-top">
+                                <h2>총 <span>12</span>개</h2>
+                                <div class="dropdown-group type2">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">50개씩</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <table>
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col>
+                                    <col>
+                                    <col style="width: 90px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>상태</th>
+                                        <th>제목</th>
+                                        <th>작성일</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- s: 문의 내역이 없을 때-->
+                                    <!-- <tr>
+                                        <td colspan="4">
+                                            <div class="inquire-none">
+                                                <i class="ico i-file-none"></i>
+                                                <p>문의하신 내역이 없습니다.</p>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <!-- e: 문의 내역이 없을 때-->
+                                    <tr>
+                                        <td><span class="comment">답변 대기</span></td>
+                                        <td class="ta-left"><p>상품문의드립니다.</p></td>
+                                        <td>2023-10-10 00:00</td>
+                                        <td>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-gray open-modal" data-modal-id="productInquireModal">수정</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="comment blue">답변 완료</span></td>
+                                        <td class="ta-left"><p>상품문의드립니다. <i class="ico i-lock"></i></p></td>
+                                        <td>2023-10-10 00:00</td>
+                                        <td>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-gray open-modal" data-modal-id="productInquireModal">수정</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                    <li class="active"><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- E:PC-->
+
+        <!-- S:MO -->
+        <div class="content mo">
+            <div class="mypage-wrap">
+                <ul>
+                    <li>
+                        <a href="마이페이지_001_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-user-b"></i>
+                                <div class="user-info">
+                                    <p>고객님 반갑습니다.</p>
+                                    <h6>studysenior@studysenior.com</h6>
+                                </div>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_002_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-list-g"></i>
+                                <h2>구매내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_003_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-msg-g"></i>
+                                <h2>상품리뷰</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_004_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-help-g"></i>
+                                <h2>문의내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E:MO-->
+
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:상품문의 수정 -->
+    <div id="productInquireModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:상품문의 수정 -->
+
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

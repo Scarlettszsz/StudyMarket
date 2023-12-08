@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap">
+        <div class="sub-header">
+            <i class="ico i-back" onclick="history.back()"></i>
+            <h1>구매 내역</h1>
+        </div>
+
+        <div class="content">
+            <div class="sub-cont-body">
+                <!-- S:검색 결과가 없을 경우-->
+                <!-- <div class="my-pur-list no-result">
+                    <div class="search-wrap">
+                        <div class="row">
+                            <div class="col">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">직접설정</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="date-group">
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="시작일">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-search">
+                                    <input type="text" placeholder="상품명으로 검색">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                                <div class="ss-btn-group">
+                                    <button type="button" class="btn flex btn-sm btn-outline-gray"><i class="ico i-arrow-rotate-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pur-list">
+                        <i class="ico i-information"></i> -->
+                <!-- <p class="msg">조회하신 기간에 구매 내역이 없습니다.</p> -->
+                <!-- <p class="msg">"<span>프로그램</span>" 검색 결과가 없습니다.</p>
+                        <button type="button" class="btn btn-outline-gray">모든 구매내역 보기</button>
+                    </div>
+
+                </div> -->
+                <!-- E:검색 결과가 없을 경우-->
+
+                <!-- S:검색 전-->
+                <div class="my-pur-list">
+                    <div class="search-wrap">
+                        <div class="dropdown-group">
+                            <div class="dropdown-list-wrap">
+                                <button class="dropdown-button" data-target="drop01">
+                                    <span class="placeholder">전체 기간</span>
+                                </button>
+                                <ul id="drop01" class="dropdown-list">
+                                    <li>옵션 1</li>
+                                    <li>옵션 2</li>
+                                    <li>옵션 3</li>
+                                    <li>옵션 4</li>
+                                    <li>옵션 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-search">
+                            <input type="text" placeholder="상품명으로 검색">
+                            <button type="button">
+                                <i class="ico i-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pur-list">
+                        <div class="pur-list-item">
+                            <p class="data">2023.10.11</p>
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li class="blue">결제완료</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">상품문의</button>
+                                    <button type="button" class="open-modal" data-modal-id="refundModal">환불신청</button>
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="confirmModal01">구매확정</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pur-list-item">
+                            <p class="data">2023.10.10</p>
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li class="blue">결제완료</li>
+                                        <li>・</li>
+                                        <li>구매확정 완료</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">상품문의</button>
+                                    <button type="button" class="open-modal" data-modal-id="reviewWriteModal">리뷰작성</button>
+                                    <button type="button">재구매</button>
+                                </div>
+                            </div>
+
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li class="blue">결제완료</li>
+                                        <li>・</li>
+                                        <li>구매확정 완료</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">상품문의</button>
+                                    <button type="button" class="open-modal" data-modal-id="reviewChangeModal">리뷰수정</button>
+                                    <button type="button">재구매</button>
+                                </div>
+                            </div>
+
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li class="blue">환불신청</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">상품문의</button>
+                                    <button type="button" class="open-modal" data-modal-id="confirmModal02">환불 신청
+                                        취소</button>
+                                    <button type="button">재구매</button>
+                                </div>
+                            </div>
+
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li class="blue">환불완료</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">상품문의</button>
+                                    <button type="button" class="open-modal" data-modal-id="refundInfoModal">환불정보</button>
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="confirmModal01">구매확정</button>
+                                </div>
+                            </div>
+
+                            <div class="item-box">
+                                <div class="item-top">
+                                    <ul>
+                                        <li>환불보류</li>
+                                    </ul>
+                                    <div class="item-info">
+                                        <div class="item-img"
+                                            style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="info">
+                                            <ul class="item-tag">
+                                                <li>프로그램</li>
+                                                <li class="mint">ONLY 공선</li>
+                                            </ul>
+                                            <h2 class="item-name">출결관리 프로그램</h2>
+                                            <p class="item-price">150,000원</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item-btn-group">
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="productInquireModal">판매자문의</button>
+                                    <button type="button" class="open-modal"
+                                        data-modal-id="confirmModal01">구매확정</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- E:검색 전-->
+            </div>
+        </div>
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:구매확정 처리 -->
+    <div id="confirmModal01" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:구매확정 처리 -->
+
+    <!-- S:환불신청 취소 -->
+    <div id="confirmModal02" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:환불신청 취소 -->
+
+    <!-- S:환불신청 -->
+    <div id="refundModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불신청 -->
+
+    <!-- S:환불정보 -->
+    <div id="refundInfoModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불정보 -->
+
+    <!-- S:리뷰작성 -->
+    <div id="reviewWriteModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰작성 -->
+
+    <!-- S:리뷰수정 -->
+    <div id="reviewChangeModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰수정 -->
+
+    <!-- S:상품문의 -->
+    <div id="productInquireModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:상품문의 -->
+
+
+
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

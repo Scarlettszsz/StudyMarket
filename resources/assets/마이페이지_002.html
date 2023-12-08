@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap" class="mypage">
+        <header class="ss-header" id="ss-header"></header>
+
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="mypage-wrap">
+                <div class="sidenav">
+                    <div class="side-top">
+                        <h2>마이페이지</h2>
+                    </div>
+                    <div class="side-bot">
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#"><i class="ico i-my-g"></i>내 정보</a>
+                            </li>
+                            <li class="active">
+                                <a href="#"><i class="ico i-list-g"></i>구매 내역</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-msg-g"></i>상품 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-help-g"></i>문의 내역</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="sub-cont my-list">
+                    <div class="depth-group">
+                        <ul>
+                            <li><a href="#"><i class="ico i-home"></i></a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">구매내역</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-cont-top">
+                        <h1>구매 내역</h1>
+                    </div>
+
+
+
+                    <div class="sub-cont-body">
+                        <!-- S:검색 결과가 없을 경우-->
+                        <!-- <div class="my-pur-list no-result">
+                            <div class="search-wrap">
+                                <div class="row">
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="dropdown-group">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop01">
+                                                    <span class="placeholder">직접설정</span>
+                                                </button>
+                                                <ul id="drop01" class="dropdown-list">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="date-group">
+                                            <div class="date-wrap">
+                                                <input type="date" placeholder="시작일">
+                                                <span>-</span>
+                                                <input type="date" placeholder="시작일">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="input-search">
+                                            <input type="text" placeholder="상품명으로 검색">
+                                            <button type="button">
+                                                <i class="ico i-search"></i>
+                                            </button>
+                                            <i class="ico i-clear"></i>
+                                        </div>
+                                        <div class="ss-btn-group">
+                                            <button type="button" class="btn flex btn-sm btn-outline-gray"><i class="ico i-arrow-rotate-right"></i>검색 초기화</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pur-list">
+                                <i class="ico i-information"></i>
+                                <p class="msg">"<span>프로그램</span>" 검색 결과가 없습니다.</p>
+                                <button type="button" class="btn btn-outline-gray">모든 구매내역 보기</button>
+                            </div>
+
+                        </div> -->
+                        <!-- E:검색 결과가 없을 경우-->
+
+                        <!-- S:검색 전-->
+                        <div class="my-pur-list">
+                            <div class="search-wrap">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">전체 기간</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="input-search">
+                                    <input type="text" placeholder="상품명으로 검색">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pur-list">
+                                <div class="pur-list-item">
+                                    <p class="data">2023.10.11</p>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li>결제완료</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-primary open-modal"
+                                                    data-modal-id="confirmModal01">구매확정</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="refundModal">환불신청</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="productInquireModal">상품문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="pur-list-item">
+                                    <p class="data">2023.10.10</p>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li>결제완료</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary">재구매</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="reviewWriteModal">리뷰작성</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">상품문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li>결제완료</li>
+                                            <li>・</li>
+                                            <li>구매확정 완료</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary">재구매</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="reviewChangeModal">리뷰수정</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">상품문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li>환불신청</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary">재구매</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="confirmModal02">환불 신청 취소</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">상품문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li>환불완료</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary">재구매</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal"
+                                                    data-modal-id="refundInfoModal">환불정보</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">상품문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="item-box">
+                                        <ul>
+                                            <li class="gray">환불보류</li>
+                                        </ul>
+                                        <div class="item-info">
+                                            <div class="item-img"
+                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                            </div>
+                                            <div class="info">
+                                                <ul class="item-tag">
+                                                    <li class="gray">프로그램</li>
+                                                    <li class="mint">ONLY 공선</li>
+                                                </ul>
+                                                <h2 class="item-name">출결관리 프로그램</h2>
+                                                <p class="item-price">150,000원</p>
+                                            </div>
+                                            <div class="item-btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-gray">환불정보</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">판매자
+                                                    문의</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- E: 검색 전-->
+
+                        <!-- ~ 11/9 이전 작업물 -->
+                        <!-- <div class="my-shopping-list">
+                            <h3>마이쇼핑</h3>
+                            <div class="tabs">
+                                <ul class="tab-list">
+                                    <li class="tab-button active" data-target="viewProduct">최근 본 상품 (10)</li>
+                                    <li class="tab-button" data-target="cartList">장바구니 (2)</li>
+                                </ul>
+                                <div class="tab-content" id="viewProduct">
+                                    <div class="view-product-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                        <button type="button" class="btn btn-sm btn-outline-gray">장바구니
+                                                            담기</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                        <button type="button" class="btn btn-sm btn-outline-gray">장바구니
+                                                            담기</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                        <button type="button" class="btn btn-sm btn-outline-gray">장바구니
+                                                            담기</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                        <button type="button" class="btn btn-sm btn-outline-gray">장바구니
+                                                            담기</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                        <button type="button" class="btn btn-sm btn-outline-gray">장바구니
+                                                            담기</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagination">
+                                        <ul>
+                                            <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                            <li class="active"><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="cartList">
+                                    <div class="view-product-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="view-product-item">
+                                                    <button type="button" class="btn-product-close">
+                                                        <i class="ico i-x-g"></i>
+                                                    </button>
+                                                    <div class="view-product-img"
+                                                        style="background: url(img/sample/sample01.png); background-size: cover;">
+                                                    </div>
+                                                    <div class="view-product-info">
+                                                        <ul>
+                                                            <li class="mint">ONLY 공선</li>
+                                                            <li>프로그램</li>
+                                                        </ul>
+                                                        <h1>출결관리 프로그램 출결관리</h1>
+                                                        <p>150,000원</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pagination">
+                                        <ul>
+                                            <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                            <li class="active"><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <!-- E:PC-->
+
+        <!-- S:MO -->
+        <div class="content mo">
+            <div class="mypage-wrap">
+                <ul>
+                    <li>
+                        <a href="마이페이지_001_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-user-b"></i>
+                                <div class="user-info">
+                                    <p>고객님 반갑습니다.</p>
+                                    <h6>studysenior@studysenior.com</h6>
+                                </div>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_002_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-list-g"></i>
+                                <h2>구매내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_003_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-msg-g"></i>
+                                <h2>상품리뷰</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_004_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-help-g"></i>
+                                <h2>문의내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E:MO-->
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:구매확정 처리 -->
+    <div id="confirmModal01" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:구매확정 처리 -->
+
+    <!-- S:환불신청 취소 -->
+    <div id="confirmModal02" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:환불신청 취소 -->
+
+    <!-- S:환불신청 -->
+    <div id="refundModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불신청 -->
+
+    <!-- S:환불정보 -->
+    <div id="refundInfoModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불정보 -->
+
+    <!-- S:리뷰작성 -->
+    <div id="reviewWriteModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰작성 -->
+
+    <!-- S:리뷰수정 -->
+    <div id="reviewChangeModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰수정 -->
+
+    <!-- S:상품문의 -->
+    <div id="productInquireModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:상품문의 -->
+
+
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

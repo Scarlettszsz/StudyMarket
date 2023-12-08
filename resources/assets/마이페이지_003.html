@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap" class="mypage">
+        <header class="ss-header" id="ss-header"></header>
+
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="mypage-wrap">
+                <div class="sidenav">
+                    <div class="side-top">
+                        <h2>마이페이지</h2>
+                    </div>
+                    <div class="side-bot">
+                        <ul class="side-menu">
+                            <li>
+                                <a href="#"><i class="ico i-my-g"></i>내 정보</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-list-g"></i>구매 내역</a>
+                            </li>
+                            <li class="active">
+                                <a href="#"><i class="ico i-msg-g"></i>상품 리뷰</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-help-g"></i>문의 내역</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="sub-cont my-list">
+                    <div class="depth-group">
+                        <ul>
+                            <li><a href="#"><i class="ico i-home"></i></a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">상품 리뷰</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-cont-top">
+                        <h1>상품 리뷰</h1>
+                    </div>
+                    <div class="sub-cont-body">
+                        <div class="my-review-wrap">
+                            <div class="tabs">
+                                <ul class="tab-list">
+                                    <li class="tab-button active" data-target="writeReview">작성 가능한 리뷰 (12)</li>
+                                    <li class="tab-button" data-target="myWriteReview">내가 작성한 리뷰 (3)</li>
+                                </ul>
+
+                                <div class="tab-content my-pur-list" id="writeReview">
+                                    <div class="search-wrap">
+                                        <div class="dropdown-group">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop01">
+                                                    <span class="placeholder">전체 기간</span>
+                                                </button>
+                                                <ul id="drop01" class="dropdown-list">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="input-search">
+                                            <input type="text" placeholder="상품명으로 검색">
+                                            <button type="button">
+                                                <i class="ico i-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- s: 검색 결과가 없을 때-->
+                                    <!-- <div class="review-list-top">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="info-msg"><i class="ico i-information-g"></i>상품 리뷰는 구매 확정 후 작성할 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="review-list-body">
+                                        <div class="pur-list no-result">
+                                            <i class="ico i-information"></i>
+                                            <p>"<span>프로그램</span>" 검색 결과가 없습니다.</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- e: 검색 결과가 없을 때-->
+
+
+                                    <div class="review-list-top">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <p class="info-msg"><i class="ico i-information-g"></i>상품 리뷰는 구매 확정 후
+                                                    작성할 수 있습니다.
+                                                </p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="dropdown-group type2">
+                                                    <div class="dropdown-list-wrap">
+                                                        <button class="dropdown-button" data-target="drop03">
+                                                            <span class="placeholder">최근 구매순</span>
+                                                        </button>
+                                                        <ul id="drop03" class="dropdown-list">
+                                                            <li>옵션 1</li>
+                                                            <li>옵션 2</li>
+                                                            <li>옵션 3</li>
+                                                            <li>옵션 4</li>
+                                                            <li>옵션 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="review-list-body">
+                                        <div class="pur-list">
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <ul>
+                                                            <li class="blue">결제완료</li>
+                                                            <li>2023.09.10</li>
+                                                        </ul>
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                            <div class="item-btn-group">
+                                                                <button type="button" class="btn btn-outline-primary btn-sm open-modal"
+                                                                    data-modal-id="reviewWriteModal">리뷰작성</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <ul>
+                                                            <li class="blue">결제완료</li>
+                                                            <li>2023.09.10</li>
+                                                        </ul>
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                            <div class="item-btn-group">
+                                                                <button type="button" class="btn btn-outline-primary btn-sm open-modal"
+                                                                    data-modal-id="reviewWriteModal">리뷰작성</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <ul>
+                                                            <li class="blue">결제완료</li>
+                                                            <li>2023.09.10</li>
+                                                        </ul>
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                            <div class="item-btn-group">
+                                                                <button type="button" class="btn btn-outline-primary btn-sm open-modal"
+                                                                    data-modal-id="reviewWriteModal">리뷰작성</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-content my-pur-list" id="myWriteReview">
+                                    <div class="search-wrap">
+                                        <div class="dropdown-group">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop01">
+                                                    <span class="placeholder">전체 기간</span>
+                                                </button>
+                                                <ul id="drop01" class="dropdown-list">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="input-search">
+                                            <input type="text" placeholder="상품명으로 검색">
+                                            <button type="button">
+                                                <i class="ico i-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- s: 작성할 수 있는 리뷰가 없을 떄-->
+                                    <!-- <div class="review-list-top">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="info-msg"><i class="ico i-information-g"></i>상품 리뷰는 구매 확정 후 작성할 수 있습니다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="review-list-body">
+                                            <div class="pur-list no-result">
+                                                <i class="ico i-msg-none"></i>
+                                                <p>작성할 수 있는 리뷰가 없습니다.</p>
+                                            </div>
+                                        </div> -->
+                                    <!-- e: 작성할 수 있는 리뷰가 없을 떄 -->
+
+
+                                    <div class="review-list-top">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="dropdown-group type2">
+                                                    <div class="dropdown-list-wrap">
+                                                        <button class="dropdown-button" data-target="drop03">
+                                                            <span class="placeholder">최근 구매순</span>
+                                                        </button>
+                                                        <ul id="drop03" class="dropdown-list">
+                                                            <li>옵션 1</li>
+                                                            <li>옵션 2</li>
+                                                            <li>옵션 3</li>
+                                                            <li>옵션 4</li>
+                                                            <li>옵션 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="review-list-body my-write-review">
+                                        <div class="pur-list">
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item-bottom">
+                                                        <p>정말 시간 가는줄 모르고 봤네요!<br>요점만 쏙쏙 잘 가르쳐 주세요!<br>다음 강의가 기대됩니다.
+                                                            재밌어요~~</p>
+                                                        <ul class="write-edit">
+                                                            <li><a href="#">수정</a></li>
+                                                            <li><a href="#">삭제</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item-bottom">
+                                                        <p>정말 시간 가는줄 모르고 봤네요!<br>요점만 쏙쏙 잘 가르쳐 주세요!<br>다음 강의가 기대됩니다.
+                                                            재밌어요~~</p>
+                                                        <ul class="write-edit">
+                                                            <li><a href="#">수정</a></li>
+                                                            <li><a href="#">삭제</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="pur-list-item">
+                                                <div class="item-box">
+                                                    <div class="item-top">
+                                                        <div class="item-info">
+                                                            <div class="item-img"
+                                                                style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                                            </div>
+                                                            <div class="info">
+                                                                <ul class="item-tag">
+                                                                    <li>프로그램</li>
+                                                                    <li class="mint">ONLY 공선</li>
+                                                                </ul>
+                                                                <h2 class="item-name">출결관리 프로그램 출결관리 프로그램 출결관리 프로그램</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item-bottom">
+                                                        <p>정말 시간 가는줄 모르고 봤네요!<br>요점만 쏙쏙 잘 가르쳐 주세요!<br>다음 강의가 기대됩니다.
+                                                            재밌어요~~</p>
+                                                        <ul class="write-edit">
+                                                            <li><a href="#">수정</a></li>
+                                                            <li><a href="#">삭제</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- E:PC-->
+
+        <!-- S:MO -->
+        <div class="content mo">
+            <div class="mypage-wrap">
+                <ul>
+                    <li>
+                        <a href="마이페이지_001_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-user-b"></i>
+                                <div class="user-info">
+                                    <p>고객님 반갑습니다.</p>
+                                    <h6>studysenior@studysenior.com</h6>
+                                </div>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_002_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-list-g"></i>
+                                <h2>구매내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_003_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-msg-g"></i>
+                                <h2>상품리뷰</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="마이페이지_004_001.html">
+                            <div class="mypage-manu-item">
+                                <i class="ico i-help-g"></i>
+                                <h2>문의내역</h2>
+                                <i class="ico i-arrow-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E:MO-->
+
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:리뷰작성 -->
+    <div id="reviewWriteModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰작성 -->
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>
