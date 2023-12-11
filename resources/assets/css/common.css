@@ -1354,6 +1354,7 @@ h3.title {
     align-items: center;
     background: #EBEBF1;
     border-top: 2px solid #5C5D62;
+    border-bottom: 1px solid #D0D1D8;
     color: #828286;
     cursor: pointer;
     font-size: 14px;
@@ -1367,6 +1368,9 @@ h3.title {
 .tab-button.active {
     background: #fff;
     border-color: #38393F;
+    border-left: 1px solid #D0D1D8;
+    border-right: 1px solid #D0D1D8;
+    border-bottom: 0;
     color: #191A1C;
 }
 

@@ -235,3 +235,9 @@
     height: 20px;
     width: 20px;
 }
+
+.i-sign-complete {
+    background: url(../img/ico/i-sign-complete.png);
+    height: 72px;
+    width: 72px;
+}

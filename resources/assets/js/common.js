@@ -465,6 +465,7 @@ $(document).ready(function () {
   $("#viewProduct").show();
   $(".tab-button[data-target='viewProduct']").addClass("active");
   $("#writeReview").show();
+  $("#idFind").show();
 
   // 입력란에서 텍스트가 입력될 때 "x" 아이콘을 보여줌
   $("input[type='text']").on("input", function () {

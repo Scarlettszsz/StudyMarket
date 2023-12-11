@@ -3059,7 +3059,7 @@ main {
 }
 
 /* **************************************** *
- * 판매자_회원가입
+ * 회원가입_002(판매자 회원가입)
  * **************************************** */
 .ss-header-logo {
     align-items: center;
@@ -3172,7 +3172,296 @@ main {
 }
 
 @media (min-width: 520px) {
+    .seller-sign-wrap {
+        padding: 0 0 32px 0;
+    }
+
+    .seller-sign-wrap .cont-top {
+        gap: 8px;
+        padding: 32px 24px;
+    }
+
+    .seller-sign-wrap h1 {
+        font-size: 28px;
+    }
+
+    .seller-sign-wrap p {
+        font-size: 20px;
+    }
+
+    .seller-sign-wrap .cont-body {
+        border-radius: 12px;
+        box-shadow: 0px 3px 8px 0px rgba(25, 26, 28, 0.10);
+        gap: 24px;
+        margin: 0 auto;
+        max-width: 520px;
+        padding: 40px;
+    }
+
+    .seller-sign-wrap .sign-area h2 {
+        font-size: 16px;
+    }
+
+    .seller-sign-wrap .sign-area {
+        gap: 24px;
+    }
+
+    .seller-sign-wrap .ss-input-wrap {
+        gap: 16px;
+    }
+
+    .seller-sign-wrap .ss-btn-group button {
+        font-size: 18px;
+        height: 56px;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+    .seller-sign-wrap {
+        height: calc(100vh - 64px);
+    }
+}
+
+/* **************************************** *
+ * 회원가입_003(회원가입완료)
+ * **************************************** */
+.sign-complete-area {
+    margin: 64px 24px;
+    text-align: center;
+}
+
+.sign-complete-area h1 {
+    color: #2C478E;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 16px 0 24px 0;
+}
+
+.sign-complete-area h6 {
+    color: #191A1C;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sign-complete-area p {
+    color: #5C5D62;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0 24px 0;
+}
+
+@media (min-width: 520px) {
+    .sign-complete-wrap {
+        background: #EBEBF1;
+        height: calc(100vh - 64px);
+        padding: 80px 0 0 0;
+    }
+
+    .sign-complete-area {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 3px 8px 0px rgba(25, 26, 28, 0.10);
+        margin: 0 auto;
+        max-width: 520px;
+        padding: 48px;
+        text-align: center;
+    }
+
+    .sign-complete-area h1 {
+        font-size: 32px;
+        margin: 24px 0 40px 0;
+    }
+
+    .sign-complete-area h6 {
+        font-size: 24px;
+    }
+
+    .sign-complete-area p {
+        font-size: 18px;
+        margin: 12px 0 40px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sign-complete-area {
+        max-width: 604px;
+    }
+}
+
+/* **************************************** *
+ * 로그인_003(아이디 및 비밀번호 찾기)
+ * **************************************** */
+.user-find-wrap {
+    padding: 20px;
+}
+
+.id-find-area {
+    margin: 16px 0 0 0;
+    text-align: center;
+}
+
+.id-find-area p {
+    color: #191A1C;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.id-find-area .ss-input-group {
+    margin: 32px 0 0 0;
+}
+
+.id-find-area .ss-btn-group {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.id-find-area button {
+    font-weight: 700;
+    width: 100%;
+}
+
+@media (min-width: 520px) {
+    .user-find-wrap {
+        background: #EBEBF1;
+        height: calc(100vh - 64px);
+        padding: 80px 0 0 0;
+    }
+
+    .user-find-wrap .tab-button {
+        font-size: 16px;
+        height: 52px;
+    }
+
+    .user-fine-area {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 3px 8px 0px rgba(25, 26, 28, 0.10);
+        margin: 0 auto;
+        max-width: 520px;
+        padding: 40px;
+    }
+
+    .id-find-area {
+        margin: 32px 0 0 0;
+    }
+
+    .id-find-area p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .id-find-area .ss-input-group {
+        margin: 48px 0 24px 0;
+    }
+
+    .id-find-area .ss-input-group input {
+        font-size: 18px;
+        height: 48px;
+    }
+
+    .id-find-area button {
+        font-size: 18px;
+        height: 56px;
+    }
+}
+
+.id-find-area h3 {
+    color: #2C478E;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.id-find-area .ss-btn-group {
+    margin: 32px 0 0 0;
+}
+
+@media (min-width: 520px) {
+    .id-find-area h3 {
+        font-size: 18px;
+    }
+
+    .id-find-area .ss-btn-group {
+        margin: 48px 0 0 0;
+    }
+}
+
+.pw-find-area {
+    margin: 16px 0 0 0;
+    text-align: center;
+}
+
+.pw-find-area p {
+    color: #191A1C;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pw-find-area p span {
+    color: #828286;
+}
+
+.pw-find-area .ss-input-group {
+    gap: 12px;
+    margin: 32px 0 24px 0;
+}
+
+.pw-find-area button {
+    font-weight: 700;
+    width: 100%;
+}
+
+@media (min-width: 520px) {
+    .pw-find-area {
+        margin: 32px 0 0 0;
+    }
+
+    .pw-find-area p {
+        font-size: 18px;
+    }
+
+    .pw-find-area .ss-input-group {
+        gap: 16px;
+        margin: 48px 0 24px 0;
+    }
+
+    .pw-find-area .ss-input-group input {
+        font-size: 18px;
+        height: 48px;
+    }
+
+    .pw-find-area button {
+        font-size: 18px;
+        height: 56px;
+    }
+}
+
+/* **************************************** *
+ * 운영관리_001_001(운영정책관리)
+ * **************************************** */
+.policy-admin-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.policy-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.policy-group h2 {
+    color: #38393F;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.policy-admin-wrap .ss-btn-group {
+    justify-content: center;
+}
+
+.policy-admin-wrap .ss-btn-group button {
+    width: 200px;
 }
