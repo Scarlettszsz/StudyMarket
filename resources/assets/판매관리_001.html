@@ -1,12 +1,21 @@
-$(document).ready(function () {
-    $("#ss-header").append(Header());
-    $("#ss-footer").append(Footer());
+<!DOCTYPE html>
+<html lang="en">
 
-    function Header() {
-        return `
-    <div class="ss-header-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap" class="mypage">
+        <header class="ss-header">
+            <div class="ss-header-top">
                 <div class="container">
-                    <a href="#" class="ss-header-logo">공선마켓</a>
+                    <a href="#" class="ss-header-logo">공선마켓<span class="seller">판매자</span></a>
                     <div class="ss-header-nav pc">
                         <ul>
                             <li class="menu-item"><a href="#">동영상</a>
@@ -279,284 +288,225 @@ $(document).ready(function () {
 
                 </div>
             </div>
-    `;
-    }
+        </header>
 
-    function Footer() {
-        return `
-    <!-- s:모바일 -->
-            <div class="container mo">
-                <h2>공선마켓</h2>
-                <p><span>공부선배는 한달에 4명씩 심장병 어린이 수술비를 지원합니다.</span></p>
-                <ul>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인(위치)정보취급방침</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">이용가이드</a></li>
-                </ul>
-                <div class="footer-info">
-                    <p>(주)공부선배 대표자 : 이용운｜사업자 등록번호 : 261-81-23776</p>
-                    <p>서울특별시 강남구 봉은사로5길6 코너빌딩 3층｜대표전화 : 02-777-0001</p>
-                    <p>통신판매번호 : 제 2015-서울강남-00971호</p>
-                    <p>고객센터 : help@studysenior.com｜제휴제안 : winwin@studysenior.com</p>
-                    <p>학원설립 운영등록번호 : 제14064호 공부선배원격학원</p>
-                    <p>신고기관명 : 서울특별시 강남서초교육지원청</p>
-                </div>
-                <ul class="footer-ico">
-                    <li><a href="#"><i class="ico i-blog"></i></a></li>
-                    <li><a href="#"><i class="ico i-instar"></i></a></li>
-                    <li><a href="#"><i class="ico i-facebook"></i></a></li>
-                </ul>
-                <h6>Copyright ©studysenior. All Rights Reserved.</h6>
-            </div>
-            <!-- e:모바일 -->
-
-            <!-- s:PC -->
-            <div class="container pc">
-                <div class="row">
-                    <div class="col-4">
-                        <h2>공선마켓</h2>
-                        <div class="footer-info">
-                            <p>(주)공부선배 대표자 : 이용운｜사업자 등록번호 : 261-81-23776</p>
-                            <p>서울특별시 강남구 봉은사로5길6 코너빌딩 3층｜대표전화 : 02-777-0001</p>
-                            <p>통신판매번호 : 제 2015-서울강남-00971호</p>
-                            <p>고객센터 : help@studysenior.com｜제휴제안 : winwin@studysenior.com</p>
-                            <p>학원설립 운영등록번호 : 제14064호 공부선배원격학원</p>
-                            <p>신고기관명 : 서울특별시 강남서초교육지원청</p>
-                        </div>
-                        <ul class="footer-ico">
-                            <li><a href="#"><i class="ico i-blog"></i></a></li>
-                            <li><a href="#"><i class="ico i-instar"></i></a></li>
-                            <li><a href="#"><i class="ico i-facebook"></i></a></li>
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="mypage-wrap">
+                <div class="sidenav">
+                    <div class="admin-menu-wrap">
+                        <ul id="admin-menu">
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-package"></i>상품 관리</a>
+                                <ul>
+                                    <li><a href="#">상품 목록</a></li>
+                                    <li><a href="#">상품 등록</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-bar"></i>판매 관리</a>
+                                <ul>
+                                    <li><a href="#">판매 현황</a></li>
+                                    <li><a href="#">환불 관리</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-help-circle"></i>문의사항 관리</a>
+                                <ul>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-review"></i>리뷰 관리</a>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-calculator"></i>정산 관리</a>
+                                <ul>
+                                    <li><a href="#">메뉴 1</a></li>
+                                    <li><a href="#">메뉴 2</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                        <h6>Copyright ©studysenior. All Rights Reserved.</h6>
                     </div>
-                    <div class="col-4">
+                </div>
+                <section class="sub-cont my-info">
+                    <div class="depth-group">
                         <ul>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인(위치)정보취급방침</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li><a href="#">이용가이드</a></li>
+                            <li><a href="#"><i class="ico i-home"></i></a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">판매 관리</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">판매 현황</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">판매 상세</a></li>
                         </ul>
-                        <ul class="footer-desc">
-                            <li><span>-</span>공부선배는 한달에 4명씩 심장병 어린이 수술비를 지원합니다.</li>
-                            <li><span>-</span>KB에스크로 서비스 : 안전거래를 위해 현금 등으로 결제시
-                                공부선배에서 가입한 서비스를 이용하실 수 있습니다.</li>
-                        </ul>
-                        <a href="#" class="service-check">서비스 가입확인</a>
                     </div>
-                    <div class="col-2">
-                        <h3>모바일 앱<button type="button">설치하기</button></h3>
-                        <p class="app-info">모바일 앱을 통해 공부선배를 언제 어디서든 손쉽게 
-                            만나보세요. 스마트폰으로도 편리하게 이용하실 수 
-                            있습니다.</p>
+                    <div class="sub-cont-top">
+                        <h1><i class="ico i-back" onclick="history.back()"></i>판매 상세</h1>
+                        <div class="inquire-detail-edit p-none">
+                            <button type="button" class="btn flex btn-sm btn-outline-gray">승인</button>
+                            <button type="button" class="btn flex btn-sm btn-outline-gray">거절</button>
+                        </div>
                     </div>
-                </div>
+                    <div class="sub-cont-body">
+                        <p class="alarm">구매자가 환불을 요청하였습니다.</p>
+                        <div class="ss-card-wrap">
+                            <div class="ss-card">
+                                <div class="ss-card-header">
+                                    <h3>판매 정보</h3>
+                                </div>
+                                <div class="ss-card-body">
+                                    <div class="dl-group">
+                                        <dl>
+                                            <dt>상태</dt>
+                                            <dd>환불요청</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>주문 번호</dt>
+                                            <dd>M231221333333</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>카테고리</dt>
+                                            <dd>강의/온라인강의</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상품 유형</dt>
+                                            <dd>영상</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상품명</dt>
+                                            <dd>빠르게 독해하기</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>판매 금액</dt>
+                                            <dd>3,100,000원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>결제 수단</dt>
+                                            <dd>신용카드</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>판매일</dt>
+                                            <dd>2023-10-10 00:00</dd>
+                                        </dl>
+                                        <hr class="blue">
+                                        <dl class="blue">
+                                            <dt>환불 요청일</dt>
+                                            <dd>2023-10-10 00:00</dd>
+                                        </dl>
+                                        <dl class="blue">
+                                            <dt>환불 사유</dt>
+                                            <dd>결제를 잘 못했어요.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ss-card">
+                                <div class="ss-card-header">
+                                    <h3>구매자 정보</h3>
+                                </div>
+                                <div class="ss-card-body">
+                                    <div class="dl-group">
+                                        <dl>
+                                            <dt>회사(학원)명</dt>
+                                            <dd>삼성 학원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당자 명</dt>
+                                            <dd>김공부</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>구매자 연락처</dt>
+                                            <dd>010-1233-3333</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>구매자 ID</dt>
+                                            <dd>dkfdk@naver.com</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상품 링크 받을 이메일 주소</dt>
+                                            <dd>dkfdk@naver.com</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>구매한 상품</dt>
+                                            <dd>독해문법 100% 타파</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>결제 수단</dt>
+                                            <dd>신용카드</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>결제금액</dt>
+                                            <dd>550,000원</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
             </div>
-            <!-- e:PC -->
-    `;
-    }
-    // header
-    // 상단 유저 프로필 호버 이벤트
-    $(".header-user-dropdown .dropdown-button").on({
-        mouseenter: function () {
-            // 호버 시 .dropdown-info 표시
-            $(".dropdown-info").show();
-        },
-        mouseleave: function () {
-            // 호버를 떠나면 .dropdown-info 숨김
-            $(".dropdown-info").hide();
-        },
-    });
+        </div>
+        <!-- E:PC-->
 
-    $(".header-user-dropdown .dropdown-list li").click(function () {
-        $("#header-user-dropdown").hide();
-        $(".dropdown-button").removeClass("active");
-    });
+        <!-- S:MO -->
+        <div class="content mo">
+            <div class="admin-menu-wrap">
+                <ul id="admin-menu">
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-package"></i>상품 관리</a>
+                        <ul>
+                            <li><a href="#">상품 목록</a></li>
+                            <li><a href="#">상품 등록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-bar"></i>판매 관리</a>
+                        <ul>
+                            <li><a href="#">판매 현황</a></li>
+                            <li><a href="#">환불 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-help-circle"></i>문의사항 관리</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ico i-review"></i>리뷰 관리</a>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-calculator"></i>정산 관리</a>
+                        <ul>
+                            <li><a href="#">메뉴 1</a></li>
+                            <li><a href="#">메뉴 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E:MO-->
+    </div>
+    <!-- e:wrap -->
 
-    // 상단 : 검색영역 이벤트
-    $(".ss-header-search").click(function () {
-        $(".ss-header-search").hide();
-        $(".ss-header-search-wrap").fadeIn();
-        $(".ss-header-wrap-bg").fadeIn();
-        $(".btn-header-search-del").show();
-        $("body").css("overflow", "hidden");
-    });
 
-    // 상단 : 검색영역
-    $(".btn-header-search-del").click(function () {
-        $(".ss-header-wrap-bg").hide();
-        $(".ss-header-search-wrap").hide();
-        $(".ss-header-search").show();
-        $(this).hide();
-        $("body").css("overflow", "auto");
-    });
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
 
-    // 상단 : 최근검색어 삭제 버튼 이벤트
-    $(".btn-keyword-del").click(function () {
-        $(this).parent("li").remove();
-    });
-
-    // 상단 : 검색했을 경우 카테고리 클릭 이벤트
-    $(".header-search-result-category li").click(function () {
-        // 단일선택
-        // $(this).addClass("active");
-        // $(this).siblings().removeClass("active");
-
-        // 다중선택
-        $(this).toggleClass("active");
-    });
-
-    // 모달 열기 버튼 클릭 이벤트
-    $(".open-modal").click(function () {
-        var modalId = $(this).data("modal-id");
-        $("#" + modalId).addClass("active");
-        $("body").css("overflow", "hidden");
-    });
-    // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
-    $(".btn-modal-close, .ss-modal-wrap").click(function () {
-        $(".ss-modal-wrap").removeClass("active");
-        $("body").css("overflow", "auto");
-    });
-    // 모달 내부 클릭 시 닫기 방지
-    $(".ss-modal-content").click(function (e) {
-        e.stopPropagation();
-    });
-
-    // 드롭다운 리스트 항목 클릭 시 이벤트 핸들러
-    $(".dropdown-list li").click(function () {
-        var selectedText = $(this).text(); // 클릭한 항목의 텍스트 가져오기
-        $(".dropdown-button .placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
-        $("#drop01").hide(); // 드롭다운 리스트 숨기기
-        $(".dropdown-button").removeClass("active"); // 드롭다운 버튼의 활성 클래스 제거
-    });
-
-    // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
-    $(".dropdown-button").click(function () {
-        if ($(this).hasClass("disabled")) {
-            return;
-        }
-
-        var target = $(this).data("target");
-        $("#" + target).toggle();
-        $(this).toggleClass("active");
-    });
-
-    // 탭 메뉴
-    $(".tab-button").click(function () {
-        var target = $(this).data("target");
-
-        $(".tab-button").removeClass("active");
-        $(this).addClass("active");
-
-        $(".tab-content").hide();
-        $("#" + target).show();
-
-        // Scroll to the target section
-        $("html, body").animate(
-            {
-                scrollTop: $("#" + target).offset().top,
-            },
-            500
-        );
-    });
-
-    // tab1 초기설정
-    $("#viewProduct").show();
-    $(".tab-button[data-target='viewProduct']").addClass("active");
-    $("#writeReview").show();
-    $("#idFind").show();
-
-    // 입력란에서 텍스트가 입력될 때 "x" 아이콘을 보여줌
-    $("input[type='text']").on("input", function () {
-        var inputText = $(this).val();
-        if (inputText.length > 0) {
-            $(".i-clear").show();
-        } else {
-            $(".i-clear").hide();
-        }
-    });
-
-    // "x" 아이콘을 클릭하면 입력 내용을 지움
-    $(".i-clear").click(function () {
-        $("input[type='text']").val("");
-        $(this).hide();
-    });
-
-    // custom-tabs
-    $(".custom-tab").click(function () {
-        $(this).toggleClass("selected");
-    });
-
-    // 상세페이지 상단, 하단 이벤트
-    const $scrollUpButton = $("#scrollUpButton");
-    const $scrollDownButton = $("#scrollDownButton");
-
-    function handleScroll() {
-        const scrollPosition = $(window).scrollTop();
-        const windowHeight = $(window).height();
-        const documentHeight = $(document).height();
-
-        if (scrollPosition < windowHeight / 2) {
-            // 최상단에 도달했을 때
-            $scrollUpButton.addClass("disabled");
-            $scrollDownButton.removeClass("disabled");
-        } else if (
-            scrollPosition + windowHeight >=
-            documentHeight - windowHeight / 2
-        ) {
-            // 최하단에 도달했을 때
-            $scrollUpButton.removeClass("disabled");
-            $scrollDownButton.addClass("disabled");
-        } else {
-            // 중간 부분에 위치할 때
-            $scrollUpButton.removeClass("disabled");
-            $scrollDownButton.removeClass("disabled");
-        }
-    }
-
-    function scrollToTop() {
-        // 최상단으로 스크롤
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-    }
-
-    function scrollToBottom() {
-        // 최하단으로 스크롤
-        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-    }
-
-    // 버튼 클릭 이벤트 핸들러 등록
-    $scrollUpButton.click(scrollToTop);
-    $scrollDownButton.click(scrollToBottom);
-
-    // 페이지 로드 시 초기 스크롤 위치 확인
-    handleScroll();
-
-    // 스크롤 이벤트에 핸들러 등록
-    $(window).scroll(handleScroll);
-
-    //20231212 #admin-menu 이벤트 추가
-    $('#admin-menu > li > a').click(function (e) {
-        e.preventDefault(); // 기본 링크 이벤트를 막습니다.
-
-        // 클릭한 메뉴의 다음에 오는 ul 요소
-        var submenu = $(this).next('ul');
-
-        // 다른 모든 ul 요소를 숨김
-        $('#admin-menu > li > ul').not(submenu).slideUp();
-
-         // 현재 메뉴에 active 클래스를 추가하고 다른 메뉴에서 제거
-         $(this).parent().addClass('active').siblings().removeClass('active');
-
-        // ul이 보이는지 여부를 확인하고 그에 따라 슬라이드 토글
-        submenu.slideToggle();
-    });
-
-    // #admin-menu > li > ul > li 클릭 시
-    $('#admin-menu > li > ul > li').click(function (e) {
-        e.preventDefault(); // 기본 링크 이벤트를 막습니다.
-
-        // 현재 클릭한 li에 active 클래스를 추가하고 다른 li에서 제거
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-});
+</html>

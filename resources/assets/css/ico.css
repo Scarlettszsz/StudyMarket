@@ -241,3 +241,75 @@
     height: 72px;
     width: 72px;
 }
+
+.i-package {
+    background: url(../img/ico/i-package.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-bar {
+    background: url(../img/ico/i-bar.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-calculator {
+    background: url(../img/ico/i-calculator.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-user-profile {
+    background: url(../img/ico/i-user-profile.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-setting {
+    background: url(../img/ico/i-setting.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-help-circle {
+    background: url(../img/ico/i-help-circle.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-review {
+    background: url(../img/ico/i-msg-g.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-mart {
+    background: url(../img/ico/i-mart.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-notice {
+    background: url(../img/ico/i-notice.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-set {
+    background: url(../img/ico/i-set.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-admin-user {
+    background: url(../img/ico/i-admin-user.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-download {
+    background: url(../img/ico/i-download.png);
+    height: 18px;
+    width: 18px;
+}

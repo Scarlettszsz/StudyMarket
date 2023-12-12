@@ -819,6 +819,7 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 0 24px 0;
+        max-width: 928px;
     }
 
     .mypage-wrap .sub-cont-top h1 {
@@ -1816,6 +1817,24 @@
     text-align: left;
 }
 
+.inquire-detail .top h2 {
+    color: #191A1C;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.inquire-detail .top ul {
+    display: flex;
+    gap: 24px;
+}
+
+.inquire-detail .top ul li {
+    color: #5C5D62;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .inquire-detail .bottom {
     display: flex;
     flex-direction: column;
@@ -1841,6 +1860,11 @@
     text-align: left;
 }
 
+.inquire-detail .top p {
+    display: flex;
+    gap: 8px;
+}
+
 .inquire-detail .top p span {
     background: #EBEBF1;
     border-radius: 2px;
@@ -1853,6 +1877,7 @@
 }
 
 .inquire-detail .top p span.blue {
+    background: #E8F7FF;
     color: #3B5AAB;
 }
 
@@ -3464,4 +3489,205 @@ main {
 
 .policy-admin-wrap .ss-btn-group button {
     width: 200px;
+}
+
+@media (min-width: 992px) {
+    .policy-admin-wrap {
+        gap: 20px;
+        max-width: 928px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .policy-admin-wrap .ss-btn-group {
+        justify-content: flex-start;
+    }
+}
+
+/* **************************************** *
+ * 운영관리_001(운영정책관리)
+ * **************************************** */
+.admin-menu-wrap {
+    padding: 20px;
+}
+
+#admin-menu>li {
+    margin: 0 0 8px 0;
+}
+
+#admin-menu>li>a {
+    align-items: center;
+    border-radius: 4px;
+    color: #38393F;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 12px;
+    height: 40px;
+    padding: 0 16px;
+}
+
+#admin-menu>li>a:hover {
+    background: #F2F6FB;
+}
+
+#admin-menu>li.active .i-package {
+    background: url(../img/ico/i-package-b.png);
+}
+
+#admin-menu>li.active .i-bar {
+    background: url(../img/ico/i-bar-b.png);
+}
+
+#admin-menu>li.active .i-calculator {
+    background: url(../img/ico/i-calculator-b.png);
+}
+
+#admin-menu>li.active .i-user-profile {
+    background: url(../img/ico/i-user-profile-b.png);
+}
+
+#admin-menu>li.active .i-setting {
+    background: url(../img/ico/i-setting-b.png);
+}
+
+#admin-menu>li.active .i-help-circle {
+    background: url(../img/ico/i-help-circle-b.png);
+}
+
+#admin-menu>li.active .i-review {
+    background: url(../img/ico/i-msg-b.png);
+}
+
+#admin-menu>li.active .i-mart {
+    background: url(../img/ico/i-mart-b.png);
+}
+
+#admin-menu>li.active .i-notice {
+    background: url(../img/ico/i-notice-b.png);
+}
+
+#admin-menu>li.active .i-set {
+    background: url(../img/ico/i-set-b.png);
+}
+
+#admin-menu>li.active .i-admin-user {
+    background: url(../img/ico/i-admin-user-b.png);
+}
+
+#admin-menu>li.active>a {
+    color: #2C478E;
+}
+
+#admin-menu .menu-folder>a::after {
+    background: url(../img/ico/i-dropdown-arrow-down.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 18px;
+    margin: 0 0 0 auto;
+    width: 18px;
+}
+
+#admin-menu .menu-folder.active>a::after {
+    background: url(../img/ico/i-chevron-up-b.png);
+    background-size: cover;
+}
+
+#admin-menu>li>ul {
+    display: none;
+}
+
+#admin-menu>li>ul>li {
+    margin: 4px 0 0 0;
+}
+
+#admin-menu>li>ul>li>a {
+    align-items: center;
+    border-radius: 4px;
+    color: #5C5D62;
+    font-weight: 500;
+    display: flex;
+    height: 40px;
+    padding: 0 0 0 48px;
+}
+
+#admin-menu>li>ul>li:hover a {
+    background: #F2F6FB;
+}
+
+#admin-menu>li>ul>li.active>a {
+    background: #E5ECF6;
+    color: #2C478E;
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .admin-menu-wrap {
+        padding: 16px;
+    }
+}
+
+/* **************************************** *
+ * 운영관리_002(공지 상세)
+ * **************************************** */
+.attachment {
+    text-align: left;
+}
+
+.attachment span {
+    align-items: center;
+    background: #E5ECF6;
+    border-radius: 100px;
+    color: #191A1C;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 4px 12px;
+}
+
+.attachment span i {
+    cursor: pointer;
+    margin: 0 0 0 8px;
+}
+
+/* **************************************** *
+ * 운영관리_002_001(모바일 공지 상세)
+ * **************************************** */
+.detail-modal .ss-modal-body {
+    padding: 0;
+}
+
+.detail-modal .inquire-wrap {
+    padding: 0;
+}
+
+.detail-modal .inquire-detail .top {
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+/* **************************************** *
+ * 판매관리_001
+ * **************************************** */
+@media (min-width: 992px) {
+    .alarm {
+        background: #E8F7FF;
+        border-radius: 6px;
+        color: #38393F;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 16px 0;
+        padding: 8px 16px;
+    }
+
+    hr.blue {
+        background: #276DD6;
+        margin: 0;
+    }
+
+    .ss-card-body dl.blue dt,
+    .ss-card-body dl.blue dd {
+        color: #276DD6;
+    }
 }
