@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap">
+        <div class="sub-header">
+            <i class="ico i-back" onclick="history.back()"></i>
+            <h1>상품목록</h1>
+        </div>
+
+        <div class="content">
+            <div class="sub-cont-body">
+                <div class="product-list-wrap">
+                    <div class="product-list-top">
+                        <div class="dropdown-group">
+                            <div class="dropdown-list-wrap">
+                                <button class="dropdown-button" data-target="drop01">
+                                    <span class="placeholder">전체상품 (n건)</span>
+                                </button>
+                                <ul id="drop01" class="dropdown-list" style="display: none;">
+                                    <li>옵션 1</li>
+                                    <li>옵션 2</li>
+                                    <li>옵션 3</li>
+                                    <li>옵션 4</li>
+                                    <li>옵션 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-search-area">
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop02">
+                                        <span class="placeholder">상품명</span>
+                                    </button>
+                                    <ul id="drop02" class="dropdown-list" style="display: none;">
+                                        <li>옵션 1</li>
+                                        <li>옵션 2</li>
+                                        <li>옵션 3</li>
+                                        <li>옵션 4</li>
+                                        <li>옵션 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input-search">
+                                <input type="text" placeholder="상품명으로 검색">
+                                <button type="button">
+                                    <i class="ico i-search"></i>
+                                </button>
+                                <i class="ico i-clear" style="display: inline;"></i>
+                            </div>
+                        </div>
+                        <div class="product-search-btn-group">
+                            <button type="button" class="btn btn-r btn-sm btn-outline-gray open-popup-btn"
+                                data-popup-id="gradePopup">학년/과목<i class="ico i-down"></i></button>
+                            <button type="button" class="btn btn-r btn-sm btn-outline-gray open-popup-btn"
+                                data-popup-id="productCategoryPopup">상품유형<i class="ico i-down"></i></button>
+                            <button type="button" class="btn btn-r btn-sm btn-outline-gray open-popup-btn"
+                                data-popup-id="periodPopup">기간<i class="ico i-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-list-body">
+                        <p>총<span>0</span>개</p>
+                        <div class="product-list-item">
+                            <div class="item-top">
+                                <div class="top-area">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk">
+                                        <label for="chk">1234114</label>
+                                    </div>
+                                    <button type="button"><i class="ico i-more"></i></button>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-img" style="background: url(img/sample/sample01.png) center; background-size: cover;">
+                                    </div>
+                                    <div class="info-txt">
+                                        <h1>출결관리 프로그램</h1>
+                                        <p>중1 / 수학 / 영상</p>
+                                        <h6>150,000원</h6>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <dl>
+                                        <dt>상품 등록일</dt>
+                                        <dd>2023. 10. 10</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>상품 담당자</dt>
+                                        <dd>공선학원대치점</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="item-bot">
+                                <ul>
+                                    <li>
+                                        <div class="dropdown-group type2">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop03">
+                                                    <span class="placeholder">판매중</span>
+                                                </button>
+                                                <ul id="drop03" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-group type2">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop04">
+                                                    <span class="placeholder">표시</span>
+                                                </button>
+                                                <ul id="drop04" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- e:wrap -->
+
+    <!-- S:학년/과목 -->
+    <div id="gradePopup" class="popup-container">
+        <div class="popup-content">
+            <div class="popup-body">
+                <div class="selected-group">
+                    <h2>학년<span>(중복선택가능)</span></h2>
+                    <div class="selected-list">
+                        <div class="selected-check">
+                            <input type="checkbox" id="all">
+                            <label for="all">전체</label>
+                        </div>
+                        <div class="selected-check">
+                            <input type="checkbox" id="1234">
+                            <label for="1234">초등</label>
+                        </div>
+                        <div class="selected-check">
+                            <input type="checkbox" id="111" checked>
+                            <label for="111">중등</label>
+                        </div>
+                        <div class="selected-check">
+                            <input type="checkbox" id="123134">
+                            <label for="123134">고등</label>
+                        </div>
+                        <div class="selected-check">
+                            <input type="checkbox" id="1234all">
+                            <label for="1234all">기타</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="selected-list type2">
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check01">
+                            <label for="check01">1학년</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check02">
+                            <label for="check02">2학년</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check03">
+                            <label for="check03">3학년</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check04" disabled>
+                            <label for="check04">4학년</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check05" disabled>
+                            <label for="check05">5학년</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check06" disabled>
+                            <label for="check06">6학년</label>
+                        </div>
+                    </div>
+
+                    <!-- 기타 선택 시 활성화 처리 -->
+                    <!-- <div class="ss-input-group">
+                        <input type="text" placeholder="직접 입력">
+                    </div> -->
+
+                </div>
+
+
+
+                <div class="selected-group">
+                    <h2>과목<span>(중복선택가능)</span></h2>
+                    <div class="selected-list type2">
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check07">
+                            <label for="check07">전체</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check02">
+                            <label for="check02">국어</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check03">
+                            <label for="check03">영어</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check04">
+                            <label for="check04">수학</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check05">
+                            <label for="check05">사회</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">과학</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">제2외국어</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">논술</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">예체능</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">비교과</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">종합</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">코딩</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">주산</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">창의력</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check06">
+                            <label for="check06">기타</label>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="ss-btn-group">
+                <button type="button" class="btn btn-md btn-outline-gray close-popup-btn"
+                    data-popup-id="gradePopupClose">취소</button>
+                <button type="button" class="btn btn-md btn-primary">적용</button>
+            </div>
+        </div>
+    </div>
+    <!-- E:학년/과목-->
+
+    <!-- S:상품유형 -->
+    <div id="productCategoryPopup" class="popup-container">
+        <div class="popup-content">
+            <div class="popup-body">
+                <div class="selected-group">
+                    <h2>상품유형<span>(중복선택가능)</span></h2>
+                    <div class="selected-list type2">
+                        <div class="selected-check type4">
+                            <input type="checkbox" id="check11">
+                            <label for="check11">전체</label>
+                        </div>
+                        <div class="selected-check type4">
+                            <input type="checkbox" id="check12">
+                            <label for="check12">영상</label>
+                        </div>
+                        <div class="selected-check type4">
+                            <input type="checkbox" id="check13">
+                            <label for="check13">온라인 교재 (E-Book)</label>
+                        </div>
+                        <div class="selected-check type4">
+                            <input type="checkbox" id="check14">
+                            <label for="check14">프로그램</label>
+                        </div>
+                        <div class="selected-check type4">
+                            <input type="checkbox" id="check15">
+                            <label for="check15">기타</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ss-btn-group">
+                <button type="button" class="btn btn-md btn-outline-gray close-popup-btn"
+                    data-popup-id="productCategoryPopupClose">취소</button>
+                <button type="button" class="btn btn-md btn-primary">적용</button>
+            </div>
+        </div>
+    </div>
+    <!-- E:상품유형-->
+
+    <!-- S:기간 -->
+    <div id="periodPopup" class="popup-container">
+        <div class="popup-content">
+            <div class="popup-body">
+                <div class="selected-group">
+                    <h2>조회 기준</h2>
+                    <div class="selected-list type2">
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check20">
+                            <label for="check20">상품등록일</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check21">
+                            <label for="check21">판매시작일</label>
+                        </div>
+                        <div class="selected-check type2">
+                            <input type="checkbox" id="check22">
+                            <label for="check22">판매종료일</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-group">
+                    <h2>기간 선택</h2>
+                    <div class="selected-list type2">
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check25">
+                            <label for="check25">오늘</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check26">
+                            <label for="check26">1주일</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check27">
+                            <label for="check27">1개월</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check28">
+                            <label for="check28">3개월</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check29">
+                            <label for="check29">6개월</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check30">
+                            <label for="check30">1년</label>
+                        </div>
+                        <div class="selected-check type3">
+                            <input type="checkbox" id="check31">
+                            <label for="check31">직접설정</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-group">
+                    <h2>직접 설정</h2>
+                    <div class="date-group">
+                        <div class="date-wrap">
+                            <input type="date" placeholder="시작일">
+                            <span>-</span>
+                            <input type="date" placeholder="시작일">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ss-btn-group">
+                <button type="button" class="btn btn-md btn-outline-gray close-popup-btn"
+                    data-popup-id="periodPopupClose">취소</button>
+                <button type="button" class="btn btn-md btn-primary">적용</button>
+            </div>
+        </div>
+    </div>
+    <!-- E:기간-->
+
+    <!-- S:구매확정 처리 -->
+    <div id="confirmModal01" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:구매확정 처리 -->
+
+    <!-- S:환불신청 취소 -->
+    <div id="confirmModal02" class="ss-modal-wrap confirm-modal"></div>
+    <!-- E:환불신청 취소 -->
+
+    <!-- S:환불신청 -->
+    <div id="refundModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불신청 -->
+
+    <!-- S:환불정보 -->
+    <div id="refundInfoModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:환불정보 -->
+
+    <!-- S:리뷰작성 -->
+    <div id="reviewWriteModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰작성 -->
+
+    <!-- S:리뷰수정 -->
+    <div id="reviewChangeModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:리뷰수정 -->
+
+    <!-- S:상품문의 -->
+    <div id="productInquireModal" class="ss-modal-wrap content-modal refund-modal full-screen-modal review-modal"></div>
+    <!-- E:상품문의 -->
+
+
+
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

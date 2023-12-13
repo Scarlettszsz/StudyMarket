@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부선배</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- s:wrap -->
+    <div id="wrap" class="mypage">
+        <header class="ss-header">
+            <div class="ss-header-top">
+                <div class="container">
+                    <a href="#" class="ss-header-logo">공선마켓<span class="seller">판매자</span></a>
+                    <div class="ss-header-nav pc">
+                        <ul>
+                            <li class="menu-item"><a href="#">동영상</a>
+                                <div class="depth-02">
+                                    <ul>
+                                        <li class="depth"><a href="#">초등</a>
+                                            <!-- 추가 서브메뉴 -->
+                                            <div class="depth-03">
+                                                <ul>
+                                                    <li class="depth"><a href="#">국어</a></li>
+                                                    <li class="depth"><a href="#">영어</a></li>
+                                                    <li class="depth"><a href="#">수학</a></li>
+                                                    <li class="depth"><a href="#">사회</a></li>
+                                                    <li class="depth"><a href="#">과학</a></li>
+                                                    <li class="depth"><a href="#">제2외국어</a></li>
+                                                    <li class="depth"><a href="#">논술</a></li>
+                                                    <li class="depth"><a href="#">예체능</a></li>
+                                                    <li class="depth"><a href="#">비교과</a></li>
+                                                    <li class="depth"><a href="#">종합</a></li>
+                                                    <li class="depth"><a href="#">주산</a></li>
+                                                    <li class="depth"><a href="#">기타</a></li>
+                                                    <li class="depth"><a href="#">창의력</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="depth"><a href="#">중등</a></li>
+                                        <li class="depth"><a href="#">고등</a></li>
+                                        <li class="depth"><a href="#">초중고</a></li>
+                                        <li class="depth"><a href="#">초중</a></li>
+                                        <li class="depth"><a href="#">중고</a></li>
+                                        <li class="depth"><a href="#">수험생</a></li>
+                                        <li class="depth"><a href="#">입시생</a></li>
+                                        <!-- 추가적인 서브메뉴 항목을 필요한 만큼 추가하세요 -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item"><a href="#">온라인 교재</a></li>
+                            <li class="menu-item"><a href="#">프로그램</a></li>
+                            <li class="menu-item"><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                    <ul class="ss-header-i">
+                        <li class="ss-header-search">
+                            <i class="ico i-search-w"></i>
+                        </li>
+                        <li class="btn-header-search-del">
+                            <i class="ico i-x-w"></i>
+                        </li>
+                        <li class="ss-header-cart">
+                            <i class="ico i-cart-w"></i>
+                        </li>
+                        <!-- <li>
+                            <button type="button" class="btn-md btn-outline-write">로그인</button>
+                        </li> -->
+                        <!-- 로그인 시-->
+                        <li>
+                            <div class="header-user-dropdown">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="header-user-dropdown">
+                                        <i class="ico i-user-w"></i>
+                                    </button>
+                                    <ul id="header-user-dropdown" class="dropdown-list">
+                                        <li>마이페이지</li>
+                                        <li>구매내역</li>
+                                        <hr>
+                                        <li>로그아웃</li>
+                                    </ul>
+                                    <ul class="dropdown-info">
+                                        <p>공부선배학원 대치점</p>
+                                        <h6>Studysenior@academy.com</h6>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ss-header-nav mo flex">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">동영상</a></li>
+                        <li><a href="#">온라인 교재</a></li>
+                        <li><a href="#">프로그램</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 검색 영역 -->
+            <div class="ss-header-wrap-bg">
+                <div class="ss-header-search-wrap">
+                    <div class="header-search-top">
+                        <div class="input-search md">
+                            <input type="text" placeholder="상품명을 입력해보세요." id="commonSearch" name="commonSearch">
+                            <button type="button">
+                                <i class="ico i-search-b"></i>
+                            </button>
+                            <i class="ico i-clear"></i>
+                        </div>
+                    </div>
+
+                    <div class="header-search-area">
+                        <!-- 최근 검색어 -->
+                        <div class="header-search-recent">
+                            <div class="recent-area">
+                                <h6>최근 검색어<a href="#">최근 검색어 지우기</a></h6>
+                                <!-- 검색 내역이 없을 때-->
+                                <!-- <p>검색 내역이 없습니다.</p> -->
+
+                                <!-- 검색 내역이 있을 때 : 최대 10개까지-->
+                                <ul class="keyword-search-list">
+                                    <li>출결관리 시스템dfadfadfad<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템fadfadfadfadfdfadfa<button type="button"
+                                            class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템dfad<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템dafadddfadfadfadfa<button type="button"
+                                            class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템adfadafadfadf<button type="button" class="btn-keyword-del"></button>
+                                    </li>
+                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템dfadfa<button type="button" class="btn-keyword-del"></button></li>
+                                    <li>출결관리 시스템adfa<button type="button" class="btn-keyword-del"></button></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- 인기 검색어 -->
+                        <div class="header-search-recent b-0">
+                            <div class="recent-area">
+                                <h6>인기 검색어<span>2023.10.10 21:32 기준</span></h6>
+                                <ul class="keyword-ranking">
+                                    <li><span>1</span>출결관리 시스템</li>
+                                    <li><span>2</span>출결관리 시스템</li>
+                                    <li><span>3</span>출결관리 시스템</li>
+                                    <li><span>4</span>출결관리 시스템</li>
+                                    <li><span>5</span>출결관리 시스템</li>
+                                    <li><span>6</span>출결관리 시스템</li>
+                                    <li><span>7</span>출결관리 시스템</li>
+                                    <li><span>8</span>출결관리 시스템</li>
+                                    <li><span>9</span>출결관리 시스템</li>
+                                    <li><span>10</span>출결관리 시스템</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 검색하였을 경우 -->
+                    <!-- <div class="header-search-result-wrap"> -->
+                    <!-- 다중선택 및 단일선택 여부 체크 : 관련 js 이벤트 작업 완료 -->
+                    <!-- <ul class="header-search-result-category">
+                            <li class="active">전체 20</li>
+                            <li>동영상 5</li>
+                            <li>온라인 교재(E-book) 12</li>
+                            <li>프로그램</li>
+                            <li>기타</li>
+                        </ul>
+                        <div class="header-search-product-wrap">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z 영어강사 조의석의 영어 길라잡이 A to Z
+                                            </h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="product-wrap">
+                                        <div class="product-group">
+                                            <div class="product-img"
+                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                            </div>
+                                            <ul class="product-tag">
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- 검색결과가 없을 경우 -->
+                    <!-- <div class="header-search-result-none">
+                        <i class="ico i-information"></i>
+                        <p>"<span>상품명</span>" 검색 결과가 없습니다.</p>
+                    </div> -->
+
+                </div>
+            </div>
+        </header>
+
+        <!-- S:PC -->
+        <div class="content pc">
+            <div class="mypage-wrap">
+                <div class="sidenav">
+                    <div class="admin-menu-wrap">
+                        <ul id="admin-menu">
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-package"></i>상품 관리</a>
+                                <ul>
+                                    <li><a href="#">상품 목록</a></li>
+                                    <li><a href="#">상품 등록</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-bar"></i>판매 관리</a>
+                                <ul>
+                                    <li><a href="#">판매 현황</a></li>
+                                    <li><a href="#">환불 관리</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-help-circle"></i>문의사항 관리</a>
+                                <ul>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ico i-review"></i>리뷰 관리</a>
+                            </li>
+                            <li class="menu-folder">
+                                <a href="#"><i class="ico i-calculator"></i>정산 관리</a>
+                                <ul>
+                                    <li><a href="#">메뉴 1</a></li>
+                                    <li><a href="#">메뉴 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="sub-cont">
+                    <div class="depth-group">
+                        <ul>
+                            <li><a href="#"><i class="ico i-home"></i></a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">상품 관리</a></li>
+                            <li><i class="ico i-chevron-right"></i></li>
+                            <li><a href="#">상품 목록</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-cont-top">
+                        <h1>상품 목록</h1>
+                    </div>
+                    <div class="sub-cont-body">
+                        <div class="product-searchbox">
+                            <div class="search-op">
+                                <div class="col">
+                                    <h6>검색어</h6>
+                                    <div class="product-search-area">
+                                        <div class="dropdown-group">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop02">
+                                                    <span class="placeholder">상품명</span>
+                                                </button>
+                                                <ul id="drop02" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="input-search">
+                                            <input type="text" placeholder="상품명으로 검색">
+                                            <button type="button">
+                                                <i class="ico i-search"></i>
+                                            </button>
+                                            <i class="ico i-clear" style="display: inline;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6>학년/과목</h6>
+                                    <div class="product-search-area">
+                                        <div class="dropdown-group w-100">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop03">
+                                                    <span class="placeholder">상품명</span>
+                                                </button>
+                                                <ul id="drop03" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-group w-100">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="drop04">
+                                                    <span class="placeholder">상품명</span>
+                                                </button>
+                                                <ul id="drop04" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6>상품유형</h6>
+                                    <div class="selected-list">
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check11">
+                                            <label for="check11">전체</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check12">
+                                            <label for="check12">영상</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check13">
+                                            <label for="check13">온라인 교재 (E-Book)</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check14">
+                                            <label for="check14">프로그램</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check15">
+                                            <label for="check15">기타</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6>판매상태</h6>
+                                    <div class="selected-list">
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check11">
+                                            <label for="check11">전체</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check12">
+                                            <label for="check12">임시저장</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check13">
+                                            <label for="check13">등록신청</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check14">
+                                            <label for="check14">판매대기</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check15">
+                                            <label for="check15">판매중</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check15">
+                                            <label for="check15">판매중지</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check15">
+                                            <label for="check15">판매종료</label>
+                                        </div>
+                                        <div class="selected-check">
+                                            <input type="checkbox" id="check15">
+                                            <label for="check15">판매금지</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6>기간</h6>
+                                    <div class="period-group">
+                                        <div class="dropdown-group">
+                                            <div class="dropdown-list-wrap">
+                                                <button class="dropdown-button" data-target="11">
+                                                    <span class="placeholder">상품등록일</span>
+                                                </button>
+                                                <ul id="11" class="dropdown-list" style="display: none;">
+                                                    <li>옵션 1</li>
+                                                    <li>옵션 2</li>
+                                                    <li>옵션 3</li>
+                                                    <li>옵션 4</li>
+                                                    <li>옵션 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="selected-group">
+                                            <div class="selected-list">
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check25">
+                                                    <label for="check25">오늘</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check26">
+                                                    <label for="check26">1주일</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check27">
+                                                    <label for="check27">1개월</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check28">
+                                                    <label for="check28">3개월</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check29">
+                                                    <label for="check29">6개월</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check30">
+                                                    <label for="check30">1년</label>
+                                                </div>
+                                                <div class="selected-check">
+                                                    <input type="checkbox" id="check31">
+                                                    <label for="check31">직접설정</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selected-group">
+                                            <div class="date-group">
+                                                <div class="date-wrap">
+                                                    <input type="date" placeholder="시작일">
+                                                    <span>-</span>
+                                                    <input type="date" placeholder="시작일">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ss-btn-group">
+                                <button type="button" class="btn btn-sm btn-primary">검색</button>
+                                <button type="button" class="btn flex btn-sm btn-outline-gray"><i class="ico i-arrow-rotate-right"></i>초기화</button>
+                            </div>
+                        </div>
+                        <div class="inquire-wrap product">
+                            <div class="inquire-top">
+                                <h2>총 <span>12</span>개</h2>
+                            </div>
+                            <div class="inquire-top">
+                                <div class="ss-btn-group">
+                                    <button type="button" class="btn flex btn-sm btn-outline-red"><i class="ico i-trash"></i>선택 삭제</button>
+                                    <button type="button" class="btn btn-sm btn-outline-gray">판매/재판매</button>
+                                    <button type="button" class="btn btn-sm btn-outline-gray">판매중지</button>
+                                    <button type="button" class="btn btn-sm btn-outline-gray">판매종료</button>
+                                </div>
+                                <div class="dropdown-group type2">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">50개씩</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-y">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 52px;">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col style="width: 240px;">
+                                        <col>
+                                        <col style="width: 120px;">
+                                        <col>
+                                        <col style="width: 120px;">
+                                        <col>
+                                        <col>
+                                        <col style="width: 80px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="check-group">
+                                                    <input type="checkbox" id="chk01">
+                                                    <label for="chk01"></label>
+                                                </div>
+                                            </th>
+                                            <th>상품번호</th>
+                                            <th>학년</th>
+                                            <th>과목</th>
+                                            <th>상품명</th>
+                                            <th>상품유형</th>
+                                            <th>판매상태</th>
+                                            <th>표시여부</th>
+                                            <th>판매가격</th>
+                                            <th>상품등록일</th>
+                                            <th>상품 담당자</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="check-group">
+                                                    <input type="checkbox" id="chk">
+                                                    <label for="chk"></label>
+                                                </div>
+                                            </td>
+                                            <td>1010101010</td>
+                                            <td>중1</td>
+                                            <td>수학</td>
+                                            <td class="ta-left">가가</td>
+                                            <td>동영상</td>
+                                            <td><span class="comment">판매중</span></td>
+                                            <td>표시</td>
+                                            <td>123,455원</td>
+                                            <td>2023-10-10 00:00</td>
+                                            <td>공선학원대치점</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-gray open-modal" data-modal-id="productInquireModal">수정</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                    <li class="active"><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <!-- E:PC-->
+
+        <!-- S:MO -->
+        <div class="content mo">
+            <div class="admin-menu-wrap">
+                <ul id="admin-menu">
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-package"></i>상품 관리</a>
+                        <ul>
+                            <li><a href="#">상품 목록</a></li>
+                            <li><a href="#">상품 등록</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-bar"></i>판매 관리</a>
+                        <ul>
+                            <li><a href="#">판매 현황</a></li>
+                            <li><a href="#">환불 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-help-circle"></i>문의사항 관리</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ico i-review"></i>리뷰 관리</a>
+                    </li>
+                    <li class="menu-folder">
+                        <a href="#"><i class="ico i-calculator"></i>정산 관리</a>
+                        <ul>
+                            <li><a href="#">메뉴 1</a></li>
+                            <li><a href="#">메뉴 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E:MO-->
+    </div>
+    <!-- e:wrap -->
+
+
+    <!-- s:script -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/common.js"></script>
+    <!-- e:script -->
+</body>
+
+</html>

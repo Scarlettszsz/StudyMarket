@@ -313,3 +313,9 @@
     height: 18px;
     width: 18px;
 }
+
+.i-more {
+    background: url(../img/ico/i-more.png);
+    height: 16px;
+    width: 16px;
+}
