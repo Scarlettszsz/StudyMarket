@@ -4016,34 +4016,55 @@ hr.blue {
 }
 
 /* **************************************** *
- * 상품등록
+ * 상품등록_001 & 001_001
  * **************************************** */
-.product-register .radio-wrap {
-    gap: 40px;
+.product-register-modal .ss-modal-footer {
+    box-shadow: 0px -4px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-.product-register .dropdown-area {
+.product-register-modal .ss-btn-group {
+    gap: 0;
+    height: 100%;
+}
+
+.product-register-modal .ss-btn-group button {
+    flex: 1%;
+    height: 100%;
+}
+
+.product-register-modal .ss-btn-group button:active,
+.product-register-modal .ss-btn-group button:hover,
+.product-register-modal .ss-btn-group button:focus {
+    box-shadow: none;
+}
+
+.product-register-modal .ss-input-group {
+    max-width: 720px;
+}
+
+.product-register-modal .dropdown-group {
+    max-width: 360px;
+}
+
+.product-register-modal .dropdown-area {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
+    max-width: 360px;
 }
 
-.product-register .dropdown-group {
-    width: 200px;
+.product-register-modal .dropdown-area .dropdown-group {
+    width: calc(50% - 4px);
 }
 
-.product-register .price {
+.product-register-modal .price {
     align-items: center;
     display: flex;
-    gap: 4px;
+    gap: 8px;
+    max-width: 360px;
 }
 
-.product-register .price .ss-input-group {
-    width: 200px;
-}
-
-.product-register .dl-group dl {
-    height: auto;
-    min-height: 32px;
+.product-register-modal .price .ss-input-group {
+    width: 100%;
 }
 
 .img-area {
@@ -4081,9 +4102,60 @@ hr.blue {
     color: #828286;
     font-size: 12px;
     font-weight: 400;
+    margin: 0 0 0 4px;
 }
 
 .dl-group hr {
     background-color: #EBEBF1;
     margin: 0;
+}
+
+.product-register-modal .mypage-detail-wrap {
+    margin: 0;
+}
+
+.product-register-modal .dl-group {
+    gap: 16px;
+}
+
+@media (min-width: 992px) {
+    .product-register .radio-wrap {
+        gap: 40px;
+    }
+
+    .product-register .dropdown-area {
+        display: flex;
+        gap: 8px;
+    }
+
+    .product-register .dropdown-group {
+        width: 200px;
+    }
+
+    .product-register .price {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+    }
+
+    .product-register .price .ss-input-group {
+        width: 200px;
+    }
+
+    .product-register .dl-group dl {
+        height: auto;
+        min-height: 32px;
+    }
+
+    .dl-group dt b {
+        margin: 0;
+    }
+
+    .product-register .flex-start {
+        align-items: flex-start;
+    }
+
+    .product-register .flex-start dt {
+        margin: 8px 0 0 0;
+    }
 }

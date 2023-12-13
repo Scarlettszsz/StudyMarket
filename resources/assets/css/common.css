@@ -660,6 +660,7 @@ h3.title {
     color: #5C5D62;
     font-size: 13px;
     font-weight: 500;
+    text-align: left;
 }
 
 .ss-card-body dt span {
@@ -671,6 +672,7 @@ h3.title {
     color: #191A1C;
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
     width: 100%;
 }
 
@@ -733,6 +735,7 @@ h3.title {
         color: #5C5D62;
         font-size: 13px;
         font-weight: 500;
+        flex: 0 0 auto;
         width: 160px;
     }
 

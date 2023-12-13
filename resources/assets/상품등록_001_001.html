@@ -489,7 +489,9 @@
                                         <hr>
                                         <dl class="flex-start">
                                             <dt>상품 설명<span>*</span></dt>
-                                            <dd>dkfdk@naver.com</dd>
+                                            <dd>
+                                                .
+                                            </dd>
                                         </dl>
                                     </div>
                                 </div>
@@ -547,6 +549,181 @@
         <!-- E:MO-->
     </div>
     <!-- e:wrap -->
+
+    <!-- S:상품등록 -->
+    <div id="productRegisterModal" class="ss-modal-wrap full-screen-modal product-register-modal active">
+        <div class="ss-modal-inner">
+            <div class="ss-modal-content">
+                <div class="ss-modal-header">
+                    <h3 class="ss-modal-title">상품 등록</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="ss-modal-body">
+                    <div class="mypage-detail-wrap">
+                        <div class="ss-card">
+                            <div class="ss-card-header">
+                                <h3>기본 정보</h3>
+                            </div>
+                            <div class="ss-card-body">
+                                <div class="dl-group">
+                                    <dl>
+                                        <dt>상품명<span>*</span></dt>
+                                        <dd>
+                                            <div class="ss-input-group">
+                                                <input type="text" id="text01" placeholder="상품명 입력">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>상품 노출 여부<span>*</span></dt>
+                                        <dd>
+                                            <div class="radio-wrap">
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio01" name="radio01">
+                                                    <label for="radio01">표시</label>
+                                                </div>
+
+                                                <div class="radio-group">
+                                                    <input type="radio" id="radio02" name="radio01">
+                                                    <label for="radio02">미표시</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>상품유형<span>*</span></dt>
+                                        <dd>
+                                            <div class="dropdown-group">
+                                                <div class="dropdown-list-wrap">
+                                                    <button class="dropdown-button" data-target="drop11">
+                                                        <span class="placeholder">선택</span>
+                                                    </button>
+                                                    <ul id="drop11" class="dropdown-list">
+                                                        <li>옵션 1</li>
+                                                        <li>옵션 2</li>
+                                                        <li>옵션 3</li>
+                                                        <li>옵션 4</li>
+                                                        <li>옵션 5</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>학년/과목<span>*</span></dt>
+                                        <dd>
+                                            <div class="dropdown-area">
+                                                <div class="dropdown-group">
+                                                    <div class="dropdown-list-wrap">
+                                                        <button class="dropdown-button" data-target="drop12">
+                                                            <span class="placeholder">선택</span>
+                                                        </button>
+                                                        <ul id="drop12" class="dropdown-list">
+                                                            <li>옵션 1</li>
+                                                            <li>옵션 2</li>
+                                                            <li>옵션 3</li>
+                                                            <li>옵션 4</li>
+                                                            <li>옵션 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-group">
+                                                    <div class="dropdown-list-wrap">
+                                                        <button class="dropdown-button" data-target="drop13">
+                                                            <span class="placeholder">선택</span>
+                                                        </button>
+                                                        <ul id="drop13" class="dropdown-list">
+                                                            <li>옵션 1</li>
+                                                            <li>옵션 2</li>
+                                                            <li>옵션 3</li>
+                                                            <li>옵션 4</li>
+                                                            <li>옵션 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>판매가격</dt>
+                                        <dd>
+                                            <div class="price">
+                                                <div class="ss-input-group">
+                                                    <input type="text" id="text01" placeholder="상품명 입력">
+                                                </div>
+                                                원
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="ss-card">
+                            <div class="ss-card-header">
+                                <h3>상품 정보</h3>
+                            </div>
+                            <div class="ss-card-body">
+                                <div class="dl-group">
+                                    <dl class="flex-start">
+                                        <dt>대표 이미지<span>*</span></dt>
+                                        <dd>
+                                            <div class="img-area">
+                                                <div class="img-group">
+                                                    <button type="button"></button>
+                                                </div>
+                                                <p>이미지 권장 크기 : ### px x #### px / 10MB 이하의 JPG, PNG 파일</p>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-start">
+                                        <dt>추가 이미지<b>(최대 n장)</b></dt>
+                                        <dd>
+                                            <div class="img-area">
+                                                <div class="img-group">
+                                                    <button type="button"></button>
+                                                </div>
+                                                <p>이미지 권장 크기 : ### px x #### px / 10MB 이하의 JPG, PNG 파일</p>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <hr>
+                                    <dl class="flex-start">
+                                        <dt>동영상</dt>
+                                        <dd>
+                                            <div class="img-area">
+                                                <div class="img-group">
+                                                    <button type="button"></button>
+                                                </div>
+                                                <p>권장 재생시간 : 최대 1분 미만</p>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <hr>
+                                    <dl class="flex-start">
+                                        <dt>상품 설명<span>*</span></dt>
+                                        <dd>dkfdk@naver.com</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="ss-modal-footer">
+                    <div class="ss-btn-group">
+                        <button type="button" class="btn btn-outline-gray">미리보기</button>
+                        <button type="button" class="btn btn-outline-gray">임시저장</button>
+                        <button type="button" class="btn btn-primary">등록신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:상품등록 -->
 
 
     <!-- s:script -->
