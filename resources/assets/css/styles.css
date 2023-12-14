@@ -812,6 +812,7 @@
 
     .mypage-wrap .sub-cont {
         padding: 16px 24px;
+        position: relative;
         width: calc(100% - 268px);
     }
 
@@ -4118,6 +4119,66 @@ hr.blue {
     gap: 16px;
 }
 
+.product-detail-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-detail-upload .tabs {
+    background: #EBEBF1;
+    border-radius: 6px;
+    gap: 4px;
+    padding: 4px;
+    width: max-content;
+}
+
+.product-detail-upload .tab-list {
+    gap: 4px;
+}
+
+.product-detail-upload .tab-button {
+    border: 0;
+    color: #191A1C;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    width: 102px;
+}
+
+.product-detail-upload .tab-button.active {
+    border: 1px solid #D0D1D8;
+    border-radius: 6px;
+}
+
+.product-detail-upload .tab-content {
+}
+
+.product-detail-upload .img-upload {
+    align-items: center;
+    background: #EBEBF1;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    height: 144px;
+    max-width: 448px;
+}
+
+.product-detail-upload .img-upload p {
+    color: #5C5D62;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-detail-upload .tab-content h6 {
+    color: #828286;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 8px 0 0 0;
+}
+
 @media (min-width: 992px) {
     .product-register .radio-wrap {
         gap: 40px;
@@ -4157,5 +4218,14 @@ hr.blue {
 
     .product-register .flex-start dt {
         margin: 8px 0 0 0;
+    }
+
+    .sub-cont-foot {
+        border-top: 1px solid #EBEBF1;
+        box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        justify-content: space-between;
+        margin: 20px -24px -20px -24px;
+        padding: 12px 16px;
     }
 }
