@@ -422,6 +422,16 @@ $(document).ready(function () {
         var target = $(this).data("target");
         $("#" + target).toggle();
         $(this).toggleClass("active");
+
+        e.stopPropagation();
+    });
+
+    // 드롭다운 영역을 벗어날 시 hide
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest('.dropdown-list-wrap').length) {
+            $(".dropdown-list").hide();
+            $(".dropdown-button").removeClass("active");
+        }
     });
 
     // E : -- 20240108 -- 수정 및 추가 --
