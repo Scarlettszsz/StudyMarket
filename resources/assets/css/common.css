@@ -1509,7 +1509,7 @@ h3.title {
     margin: 10px 0 0 0;
     right: -7px;
     width: 120px;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .header-user-dropdown .dropdown-list-wrap .dropdown-list::before {
@@ -1558,7 +1558,7 @@ h3.title {
     padding: 8px 12px;
     position: absolute;
     right: -7px;
-    z-index: 9;
+    z-index: 999;
 }
 
 .header-user-dropdown .dropdown-info::before {

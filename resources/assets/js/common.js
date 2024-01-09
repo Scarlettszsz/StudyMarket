@@ -357,6 +357,44 @@ $(document).ready(function () {
     `;
     }
     // header
+
+    // S : -- 20240108 -- 수정 및 추가 --
+    // 상단 유저 프로필 호버 이벤트
+    $(".ss-header-search").click(function (e) {
+        if (!$(e.target).is(".btn-keyword-del, .btn-keyword-del *")) {
+            e.stopPropagation(); // Stop click events from propagating to parents
+            $(".ss-header-search").hide();
+            $(".ss-header-search-wrap").fadeIn();
+            $(".ss-header-wrap-bg").fadeIn();
+            $(".btn-header-search-del").show();
+            $("body").css("overflow", "hidden");
+    
+            $(".dropdown-button").removeClass("active");
+            $(".dropdown-list").hide();
+        }
+    });
+
+    // 상단 : 검색영역 닫기 이벤트
+    $(".btn-header-search-del").click(function () {
+        $(".ss-header-wrap-bg").hide();
+        $(".ss-header-search-wrap").hide();
+        $(".ss-header-search").show();
+        $(this).hide();
+        $("body").css("overflow", "auto");
+    });
+
+    // 다른 영역을 클릭할 때 검색영역 닫기
+    $(document).on("click", function (e) {
+        console.log('123141');
+        if (!$(e.target).closest('.ss-header-search-wrap').length && !$(e.target).hasClass('btn-keyword-del')) {
+            $(".ss-header-wrap-bg").hide();
+            $(".ss-header-search-wrap").hide();
+            $(".ss-header-search").show();
+            $(".btn-header-search-del").hide();
+            $("body").css("overflow", "auto");
+        }
+    });
+
     // 상단 유저 프로필 호버 이벤트
     $(".header-user-dropdown .dropdown-button").on({
         mouseenter: function () {
@@ -374,26 +412,24 @@ $(document).ready(function () {
         $(".dropdown-button").removeClass("active");
     });
 
-    // 상단 : 검색영역 이벤트
-    $(".ss-header-search").click(function () {
-        $(".ss-header-search").hide();
-        $(".ss-header-search-wrap").fadeIn();
-        $(".ss-header-wrap-bg").fadeIn();
-        $(".btn-header-search-del").show();
-        $("body").css("overflow", "hidden");
+
+    // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
+    $(".dropdown-button").click(function (e) {
+        if ($(this).hasClass("disabled")) {
+            return;
+        }
+
+        var target = $(this).data("target");
+        $("#" + target).toggle();
+        $(this).toggleClass("active");
     });
 
-    // 상단 : 검색영역
-    $(".btn-header-search-del").click(function () {
-        $(".ss-header-wrap-bg").hide();
-        $(".ss-header-search-wrap").hide();
-        $(".ss-header-search").show();
-        $(this).hide();
-        $("body").css("overflow", "auto");
-    });
+    // E : -- 20240108 -- 수정 및 추가 --
 
+    // 20240108 수정 이후 문제가 생긴 이벤트 (수정완료)
     // 상단 : 최근검색어 삭제 버튼 이벤트
     $(".btn-keyword-del").click(function () {
+        console.log("click");
         $(this).parent("li").remove();
     });
 
@@ -429,17 +465,6 @@ $(document).ready(function () {
         $(".dropdown-button .placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
         $("#drop01").hide(); // 드롭다운 리스트 숨기기
         $(".dropdown-button").removeClass("active"); // 드롭다운 버튼의 활성 클래스 제거
-    });
-
-    // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
-    $(".dropdown-button").click(function () {
-        if ($(this).hasClass("disabled")) {
-            return;
-        }
-
-        var target = $(this).data("target");
-        $("#" + target).toggle();
-        $(this).toggleClass("active");
     });
 
     // 탭 메뉴
