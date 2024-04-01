@@ -496,7 +496,7 @@ button:focus {
 }
 
 .content-modal .ss-modal-content.ss-modal-lg {
-    width: 1000px;
+    width: 1400px;
 }
 
 .content-modal .ss-modal-body {
@@ -509,6 +509,11 @@ button:focus {
 }
 
 .content-modal .ss-input-wrap {
+    gap: 12px;
+    width: 100%;
+}
+
+.content-modal .ss-input-group {
     width: 100%;
 }
 
@@ -783,6 +788,7 @@ h3.title {
 }
 
 .ss-input-group.w-80 {
+    flex: 0 0 auto;
     width: 80px;
 }
 
@@ -811,7 +817,7 @@ h3.title {
 .ss-input-group.horizontal label {
     flex: 0 0 auto;
     margin: 0;
-    width: 100px;
+    width: 80px;
 }
 
 .ss-input-group label span {
@@ -1221,11 +1227,12 @@ h3.title {
 }
 
 .file-group h2 {
-    color: #000;
-    font-size: 15px;
+    color: #5C5D62;
+    font-size: 14px;
     font-weight: 500;
     flex: 0 0 auto;
-    width: 104px;
+    text-align: left;
+    width: 80px;
 }
 
 .file-group input[type=file] {
