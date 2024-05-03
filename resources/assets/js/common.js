@@ -596,6 +596,17 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
+    // 20240503 .accordion 이벤트 추가
+    $('.accordion .ss-card-header').click(function() {
+        $(this).parent().toggleClass('active');
+    })
+
+    $(".derect-input").click(function() {
+        $("#derectInput").toggle();
+    });
+    $("input[type='radio']:not(.derect-input)").click(function() {
+        $("#derectInput").hide();
+    });
 });
 
 class MobilePopup {

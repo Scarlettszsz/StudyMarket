@@ -168,6 +168,7 @@ textarea {
 .ml-auto {
     margin-left: auto;
 }
+
 /* **************************************** *
  * Background-color
  * **************************************** */
@@ -638,6 +639,7 @@ h3.title {
     background: #F6F6F9;
 }
 
+
 .ss-card-header {
     border-bottom: 2px solid #EBEBF1;
     padding: 20px 20px 16px 20px;
@@ -697,7 +699,38 @@ h3.title {
     width: 100%;
 }
 
+.ss-card-body hr {
+    margin: 0;
+}
 
+.ss-card.accordion .ss-card-header {
+    border-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ss-card.accordion i {
+    transform: rotate(0);
+    transform: all .5s;
+}
+
+.ss-card.accordion .ss-card-body {
+    display: none;
+}
+
+.ss-card.accordion.active .ss-card-header {
+    border-bottom: 2px solid #EBEBF1;
+}
+
+.ss-card.accordion.active i {
+    transform: rotate(180deg);
+    transform: all .5s;
+}
+
+.ss-card.accordion.active .ss-card-body {
+    display: block;
+}
 
 @media (min-width: 992px) {
     .ss-card-wrap {
@@ -1059,11 +1092,21 @@ h3.title {
     gap: 20px;
 }
 
+.radio-wrap.vertical {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .radio-group {
     align-items: center;
     display: flex;
+    min-height: 32px;
 }
 
+.radio-group input[type=text] {
+    display: none;
+}
 .radio-group input[type=radio] {
     display: none;
 }
@@ -1264,6 +1307,11 @@ h3.title {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+}
+
+.dropdown-group.horizontal {
+    flex-direction: row;
 }
 
 .dropdown-group h2 {
